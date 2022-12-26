@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the kooha package.
-# Jiri Grönroos <jiri.gronroos@iki.fi>, 2021.
+# Jiri Grönroos <jiri.gronroos@iki.fi>, 2021, 2022.
 # Jan Kuparinen <copper_fin@hotmail.com>, 2021.
 # Ricky Tigg <ricky.tigg@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: kooha\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-10 07:44+0800\n"
-"PO-Revision-Date: 2022-03-27 17:07+0000\n"
-"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
+"POT-Creation-Date: 2022-12-25 09:25+0800\n"
+"PO-Revision-Date: 2022-09-30 08:04+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/kooha/pot-file/"
 "fi/>\n"
 "Language: fi\n"
@@ -18,15 +18,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.12-dev\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #: data/io.github.seadve.Kooha.desktop.in.in:3
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:7 src/application.rs:172
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:6 src/about.rs:20
+#: src/main.rs:63
 msgid "Kooha"
 msgstr "Kooha"
 
 #: data/io.github.seadve.Kooha.desktop.in.in:5
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:8 src/application.rs:173
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:7
 msgid "Elegantly record your screen"
 msgstr "Tallenna näyttösi tapahtumat"
 
@@ -35,7 +36,7 @@ msgstr "Tallenna näyttösi tapahtumat"
 msgid "Screencast;Recorder;Screen;Video;"
 msgstr "Screencast;Recorder;Screen;Video;tallennin;nauhoitus;"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:10
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:9
 msgid ""
 "Capture your screen in a intuitive and straightforward way without "
 "distractions."
@@ -43,7 +44,7 @@ msgstr ""
 "Kaappaa näyttösi sisältö intuitiivisella ja suoraviivaisella tavalla ilman "
 "häiriötekijöitä."
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:11
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:10
 msgid ""
 "Kooha is a simple screen recorder with a minimalist interface. You can just "
 "click the record button without having to configure a bunch of settings."
@@ -57,283 +58,563 @@ msgid "The main features of Kooha include the following:"
 msgstr "Koohan keskeisimmät ominaisuudet:"
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:14
-msgid "🎥 Capture your screen without any hassle."
-msgstr "🎥 Nauhoita näyttösi sisältö vaivatta."
+msgid "🎙️ Record microphone, desktop audio, or both at the same time"
+msgstr ""
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:15
-msgid "🎙️ Record your microphone, computer sounds, or both at the same time."
+msgid "📼 Support for WebM, MP4, GIF, and Matroska formats"
 msgstr ""
-"🎙️ Nauhoita tietokoneen äänet, mikrofonin äänet tai molemmat samanaikaisesti."
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:16
-msgid "📼 Support for WebM, MP4, GIF, and MKV formats."
-msgstr "📼 Tuki WebM-, MP4-, GIF- ja MKV-tiedostomuodoille."
+msgid "🖥️ Select a monitor, a window, or a portion of the screen to record"
+msgstr ""
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:17
-msgid "🗔 Multiple sources selection."
-msgstr "🗔 Usein lähteiden valinta."
+msgid "🗔 Multiple sources selection"
+msgstr ""
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:18
-msgid "🚀 Optional hardware accelerated encoding"
-msgstr "🚀 Valinnainen laitteistokiihdytys videon koodausta varten"
+msgid ""
+"🛠️ Configurable saving location, pointer visibility, frame rate, and delay"
+msgstr ""
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:19
-msgid "🖥️ Select a monitor or window to record."
-msgstr "🖥️ Valitse näyttö tai ikkuna nauhoitettavaksi."
+msgid "🚀 Experimental hardware accelerated encoding"
+msgstr ""
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:20
-msgid "🖼️ Create a selection to capture certain area from your screen."
-msgstr "🖼️ Valitse haluamasi alue näytöltä nauhoitettavaksi."
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:26 src/about.rs:21
+msgid "Dave Patrick Caberto"
+msgstr "Dave Patrick Caberto"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:21
-msgid "⏲️ Set delay to prepare before you start recording."
-msgstr "⏲️ Aseta viive ennen nauhoituksen alkua."
+#: data/resources/ui/area-selector.ui:15
+msgid "Select Area"
+msgstr "Valitse alue"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:22
-msgid "🖱️ Hide or show mouse pointer."
-msgstr "🖱️ Piilota tai näytä hiiren osoitin."
+#: data/resources/ui/area-selector.ui:20 data/resources/ui/window.ui:238
+#: data/resources/ui/window.ui:280
+msgid "Cancel"
+msgstr "Peru"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:23
-msgid "💾 Choose a saving location for your recording."
-msgstr "💾 Valitse tallennussijainti nauhoitukselle."
+#: data/resources/ui/area-selector.ui:26
+msgid "Done"
+msgstr "Valmis"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:24
-msgid "⌨️ Utilize helpful keyboard shortcuts."
-msgstr "⌨️ Hyödynnä käteviä pikanäppäimiä."
+#: data/resources/ui/area-selector.ui:35
+msgid "Reset Selection"
+msgstr "Nollaa valinta"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:31
-msgid "Dave Patrick"
-msgstr "Dave Patrick"
-
-#: data/resources/ui/shortcuts.ui:10
+#: data/resources/ui/preferences-window.ui:11 data/resources/ui/shortcuts.ui:10
 msgid "General"
 msgstr "Yleiset"
+
+#: data/resources/ui/preferences-window.ui:14
+msgid "Delay (Seconds)"
+msgstr "Viive (sekuntia)"
+
+#: data/resources/ui/preferences-window.ui:32
+msgid "Recordings Folder"
+msgstr "Tallenteet-kansio"
+
+#: data/resources/ui/preferences-window.ui:51
+msgid "Video"
+msgstr "Video"
+
+#: data/resources/ui/preferences-window.ui:54
+msgid "Format"
+msgstr "Muoto"
+
+#: data/resources/ui/preferences-window.ui:59
+msgid "Frame Rate"
+msgstr "Kuvataajuus"
+
+#: data/resources/ui/preferences-window.ui:65
+msgid "This frame rate may cause performance issues."
+msgstr "Tämä kuvataajuus voi aiheuttaa suorituskykyongelmia."
 
 #: data/resources/ui/shortcuts.ui:14
 msgid "Open Menu"
 msgstr "Avaa valikko"
 
 #: data/resources/ui/shortcuts.ui:20
+msgid "Show Preferences"
+msgstr "Näytä asetukset"
+
+#: data/resources/ui/shortcuts.ui:26
 msgid "Show Shortcuts"
 msgstr "Näytä pikanäppäimet"
 
-#: data/resources/ui/shortcuts.ui:26
+#: data/resources/ui/shortcuts.ui:32
 msgid "Quit"
 msgstr "Lopeta"
 
-#: data/resources/ui/shortcuts.ui:33 src/widgets/main_window.rs:154
+#: data/resources/ui/shortcuts.ui:39 src/window.rs:342
 msgid "Recording"
 msgstr "Nauhoitetaan"
 
-#: data/resources/ui/shortcuts.ui:37
+#: data/resources/ui/shortcuts.ui:43
 msgid "Toggle Record"
 msgstr "Nauhoitus päälle/pois"
 
-#: data/resources/ui/shortcuts.ui:44
+#: data/resources/ui/shortcuts.ui:50
 msgid "Toggle Pause"
 msgstr "Keskeytys päälle/pois"
 
-#: data/resources/ui/shortcuts.ui:50 data/resources/ui/window.ui:237
-msgid "Cancel Delay"
-msgstr "Perumisen viive"
+#: data/resources/ui/shortcuts.ui:56
+msgid "Cancel Record"
+msgstr "Peru nauhoitus"
 
-#: data/resources/ui/shortcuts.ui:57
+#: data/resources/ui/shortcuts.ui:63
 msgid "Settings"
 msgstr "Asetukset"
 
-#: data/resources/ui/shortcuts.ui:61
-msgid "Toggle Computer Sounds"
-msgstr "Tietokoneen äänet päälle/pois"
-
 #: data/resources/ui/shortcuts.ui:67
+msgid "Toggle Desktop Audio"
+msgstr "Työpöydän ääni päälle/pois"
+
+#: data/resources/ui/shortcuts.ui:73
 msgid "Toggle Microphone"
 msgstr "Mikrofoni päälle/pois"
 
-#: data/resources/ui/shortcuts.ui:73
+#: data/resources/ui/shortcuts.ui:79
 msgid "Toggle Pointer"
 msgstr "Osoitin päälle/pois"
 
-#: data/resources/ui/window.ui:31
+#: data/resources/ui/window.ui:29
 msgid "Main Menu"
 msgstr "Päävalikko"
 
-#: data/resources/ui/window.ui:47
-msgid "Normal"
-msgstr "Normaali"
-
-#: data/resources/ui/window.ui:57
-msgid "Selection"
-msgstr "Valinta"
-
-#: data/resources/ui/window.ui:86
+#: data/resources/ui/window.ui:58
 msgid "Capture a Monitor or Window"
 msgstr "Kaappaa näyttö tai ikkuna"
 
-#: data/resources/ui/window.ui:94
+#: data/resources/ui/window.ui:71
 msgid "Capture a Selection of Screen"
 msgstr "Kaappaa valittu alue näytöltä"
 
-#: data/resources/ui/window.ui:107
-msgid "Record Computer Sounds"
-msgstr "Nauhoita tietokoneen äänet"
+#: data/resources/ui/window.ui:91
+msgid "Enable Desktop Audio"
+msgstr "Käytä työpöydän ääntä"
 
-#: data/resources/ui/window.ui:114
-msgid "Record From Microphone"
-msgstr "Nauhoita mikrofonista"
+#: data/resources/ui/window.ui:92
+msgid "Disable Desktop Audio"
+msgstr "Poista käytöstä työpöydän ääni"
 
-#: data/resources/ui/window.ui:121
+#: data/resources/ui/window.ui:100
+msgid "Enable Microphone"
+msgstr "Käytä mikrofonia"
+
+#: data/resources/ui/window.ui:101
+msgid "Disable Microphone"
+msgstr "Poista käytöstä mikrofoni"
+
+#: data/resources/ui/window.ui:109
 msgid "Show Pointer"
 msgstr "Näytä osoitin"
 
-#: data/resources/ui/window.ui:128
+#: data/resources/ui/window.ui:110
+msgid "Hide Pointer"
+msgstr "Piilota osoitin"
+
+#: data/resources/ui/window.ui:120
+msgid "Start Recording"
+msgstr "Aloita nauhoitus"
+
+#: data/resources/ui/window.ui:121
 msgid "Record"
 msgstr "Nauhoita"
 
-#: data/resources/ui/window.ui:182
+#: data/resources/ui/window.ui:134
+msgid "Forget Previously Selected Video Sources"
+msgstr "Unohda aiemmin valitut videolähteet"
+
+#: data/resources/ui/window.ui:185
+msgid "Stop Recording"
+msgstr "Lopeta nauhoitus"
+
+#: data/resources/ui/window.ui:186
 msgid "Stop"
 msgstr "Pysäytä"
+
+#: data/resources/ui/window.ui:196
+msgid "Pause Recording"
+msgstr "Keskeytä nauhoitus"
 
 #: data/resources/ui/window.ui:219
 msgid "Recording in…"
 msgstr "Nauhoitus alkaa…"
 
-#: data/resources/ui/window.ui:258
+#: data/resources/ui/window.ui:237 data/resources/ui/window.ui:279
+msgid "Cancel Recording"
+msgstr "Peru nauhoitus"
+
+#: data/resources/ui/window.ui:262
 msgid "Flushing…"
 msgstr "Tyhjennetään…"
 
-#: data/resources/ui/window.ui:283
-msgid "_Delay"
-msgstr "_Viive"
-
-#: data/resources/ui/window.ui:285
-msgid "None"
-msgstr "Ei mitään"
-
-#: data/resources/ui/window.ui:290
-msgid "5 seconds"
-msgstr "5 sekuntia"
-
-#: data/resources/ui/window.ui:295
-msgid "10 seconds"
-msgstr "10 sekuntia"
+#: data/resources/ui/window.ui:297
+msgid "_Preferences"
+msgstr "_Asetukset"
 
 #: data/resources/ui/window.ui:301
-msgid "_Video Format"
-msgstr "_Videon muoto"
-
-#: data/resources/ui/window.ui:303
-msgid "WebM"
-msgstr "WebM"
-
-#: data/resources/ui/window.ui:308
-msgid "MKV"
-msgstr "MKV"
-
-#: data/resources/ui/window.ui:313
-msgid "MP4"
-msgstr "MP4"
-
-#: data/resources/ui/window.ui:318
-msgid "GIF"
-msgstr "GIF"
-
-#: data/resources/ui/window.ui:324
-msgid "_Save to…"
-msgstr "_Tallenna nimellä…"
-
-#: data/resources/ui/window.ui:330
 msgid "_Keyboard Shortcuts"
 msgstr "_Pikanäppäimet"
 
-#: data/resources/ui/window.ui:334
+#: data/resources/ui/window.ui:305
 msgid "_About Kooha"
 msgstr "_Tietoja - Kooha"
 
-#: src/application.rs:138
-msgid "Select Recordings Folder"
-msgstr "Valitse nauhoitusten kansio"
+#: src/about.rs:23
+msgid "© 2022 Dave Patrick Caberto"
+msgstr "© 2022 Dave Patrick Caberto"
 
 #. Translators: Replace "translator-credits" with your names. Put a comma between.
-#: src/application.rs:183
+#: src/about.rs:31
 msgid "translator-credits"
 msgstr "Jiri Grönroos"
 
-#: src/application.rs:184
-msgid "Copyright 2021 Dave Patrick"
-msgstr "Tekijänoikeus 2021 Dave Patrick"
+#: src/about.rs:41
+msgid "Donate (Liberapay)"
+msgstr "Lahjoita (Liberapay)"
 
-#: src/application.rs:187
+#: src/about.rs:45
+msgid "Donate (PayPal)"
+msgstr "Lahjoita (PayPal)"
+
+#: src/about.rs:49
 msgid "GitHub"
 msgstr "GitHub"
 
-#: src/application.rs:208
-msgid "Screencast Recorded!"
-msgstr "Näyttötallenne nauhoitettu!"
+#: src/about.rs:51
+msgid "Translate"
+msgstr "Käännä"
 
-#: src/application.rs:210
-msgid "The recording has been saved in “{}”"
-msgstr "Nauhoitus on tallennettu kohteeseen “{}”"
+#. Translators: This is a message that the user will see when the recording is finished.
+#: src/application.rs:107
+msgid "Screencast recorded"
+msgstr "Näyttötallenne nauhoitettu"
 
-#: src/application.rs:218
-msgid "Open File"
-msgstr "Avaa tiedosto"
+#: src/application.rs:108
+msgid "Click here to view the video."
+msgstr "Napsauta nähdäksesi videon."
 
-#: src/error.rs:17
-msgid "Screencast Portal Request Error"
-msgstr "Näyttötallenneportaalin pyyntövirhe"
+#: src/application.rs:114
+msgid "Show in Files"
+msgstr "Näytä tiedostonhallinnassa"
 
-#: src/error.rs:18
-msgid "Pipeline Build Error"
-msgstr "Liukuhihnan käännösvirhe"
-
-#: src/error.rs:19
-msgid "Recording Error"
-msgstr "Nauhoitusvirhe"
-
-#: src/error.rs:47
-msgid ""
-"Make sure to check for the runtime dependencies and <a href=\"https://github."
-"com/SeaDve/Kooha#-it-doesnt-work\">It Doesn't Work page</a>."
+#: src/area_selector/mod.rs:318
+msgid "approx."
 msgstr ""
-"Varmista, että tarkistat ajonaikaiset riippuvuudet ja <a href=\"https://"
-"github.com/SeaDve/Kooha#-it-doesnt-work\">Se ei toimi -sivun</a>."
 
-#: src/error.rs:48
-msgid ""
-"A GStreamer plugin may not be installed. If it is installed but still does "
-"not work properly, please report to <a href=\"https://github.com/SeaDve/"
-"Kooha/issues\">Kooha's issue page</a>."
+#: src/audio_device.rs:53 src/audio_device.rs:175
+msgid "Make sure that you have PulseAudio installed in your system."
+msgstr "Varmista, että PulseAudio on asennettu järjestelmään."
+
+#: src/audio_device.rs:54
+msgid "Failed to start device monitor"
+msgstr "Laitemonitorin käynnistäminen epäonnistui"
+
+#: src/audio_device.rs:176
+msgid "Failed to connect to PulseAudio daemon"
+msgstr "PulseAudio-taustaosaan yhdistäminen epäonnistui"
+
+#: src/preferences_window.rs:225
+msgid "This format is experimental and unsupported."
+msgstr "Tämä muoto on kokeellinen eikä sille tarjota tukea."
+
+#: src/preferences_window.rs:254
+msgid "None"
+msgstr "Ei mitään"
+
+#: src/profile.rs:115
+msgid "GIF"
+msgstr "GIF"
+
+#: src/profile.rs:266
+msgid "WebM"
+msgstr "WebM"
+
+#: src/profile.rs:290
+msgid "MP4"
+msgstr "MP4"
+
+#: src/profile.rs:309
+msgid "Matroska"
+msgstr "Matroska"
+
+#: src/profile.rs:342
+msgid "WebM VP9"
+msgstr "WebM VP9"
+
+#: src/profile.rs:366
+msgid "WebM AV1"
+msgstr "WebM AV1"
+
+#: src/profile.rs:387
+msgid "WebM VAAPI VP8"
+msgstr "WebM VAAPI VP8"
+
+#: src/profile.rs:402
+msgid "WebM VAAPI VP9"
+msgstr "WebM VAAPI VP9"
+
+#: src/profile.rs:417
+msgid "WebM VAAPI H264"
+msgstr "WebM VAAPI H264"
+
+#: src/recording.rs:37
+msgid "No active profile"
+msgstr "Ei aktiivista profiilia"
+
+#. Translators: {} will be replaced with a link to a webpage.
+#. github.com/SeaDve/Kooha#-it-doesnt-work">It Doesn't Work page</a>"#),
+#: src/recording.rs:196 src/recording.rs:250 src/recording.rs:274
+msgid "Failed to start recording"
+msgstr "Nauhoituksen aloitus epäonnistui"
+
+#. Translators: {} will be replaced with a link to a webpage.
+#: src/recording.rs:195
+msgid "Check out {} for help."
+msgstr "Katso ohjeita {}."
+
+#: src/recording.rs:235
+msgid "No microphone source found"
+msgstr "Mikrofonilähdettä ei löydy"
+
+#: src/recording.rs:242
+msgid "No desktop speaker source found"
+msgstr "Työpöydän kaiutinlähdettä ei löydy"
+
+#: src/recording.rs:249
+msgid "A GStreamer plugin may not be installed."
+msgstr "GStreamer-liitännäistä ei välttämättä ole asennettu."
+
+#: src/recording.rs:273 src/recording.rs:495
+msgid "Make sure that the saving location exists and is accessible."
 msgstr ""
-"GStreamer-lisäosaa ei ehkä ole asennettu. Jos se on asennettu, mutta ei "
-"vieläkään toimi kunnolla, ilmoita siitä <a href=\"https://github.com/SeaDve/"
-"Kooha/issues\">Koohan vikailmoitusjärjestelmään</a>."
+"Varmista, että tallennuksen sijainti on olemassa ja se on käytettävissä."
 
-#: src/error.rs:49
+#: src/recording.rs:491
+msgid "An error occurred while recording"
+msgstr "Virhe nauhoituksen aikana"
+
+#. Translators: {} will be replaced with a path to the folder.
+#: src/recording.rs:503
+msgid "Failed to open “{}” for writing"
+msgstr "Ei voitu avata “{}” kirjoitusta varten"
+
+#: src/recording.rs:505
+msgid "Failed to open file for writing"
+msgstr "Tiedoston avaus kirjoitusta varten epäonnistui"
+
+#: src/settings.rs:42
+msgid "Select Recordings Folder"
+msgstr "Valitse nauhoitusten kansio"
+
+#: src/settings.rs:52
+msgid "_Cancel"
+msgstr "_Peru"
+
+#: src/settings.rs:53
+msgid "_Select"
+msgstr "_Valitse"
+
+#: src/settings.rs:67
+msgid "No folder selected"
+msgstr "Kansiota ei ole valittu"
+
+#: src/settings.rs:68
+msgid "Please choose a folder and try again."
+msgstr "Valitse toinen kansio ja yritä uudelleen."
+
+#. Translators: {} will be replaced with a path to the folder.
+#: src/settings.rs:77
+msgid "Cannot access “{}”"
+msgstr "Ei pääsyä kohteeseen “{}”"
+
+#: src/settings.rs:78
+msgid "Please choose an accessible location and try again."
+msgstr "Valitse sijainti, johon käyttöoikeudet riittävät, ja yritä uudelleen."
+
+#: src/settings.rs:189 src/window.rs:214
+msgid "Ok"
+msgstr "OK"
+
+#: src/window.rs:70
+msgid "Failed to toggle pause"
+msgstr "Keskeytys epäonnistui"
+
+#: src/window.rs:177
+msgid "Copy to clipboard"
+msgstr "Kopioi leikepöydälle"
+
+#: src/window.rs:183
+msgid "Copied to clipboard"
+msgstr "Kopioitu leikepöydälle"
+
+#: src/window.rs:189
+msgid "Show detailed error"
+msgstr "Näytä yksityiskohtainen virhe"
+
+#: src/window.rs:211
+msgid "Help"
+msgstr "Ohje"
+
+#: src/window.rs:285
+msgid "Open Preferences?"
+msgstr "Avataanko asetukset?"
+
+#: src/window.rs:286
 msgid ""
-"Make sure that the saving location exists or is accessible. If it actually "
-"exists or is accessible, something went wrong and please report to <a href="
-"\"https://github.com/SeaDve/Kooha/issues\">Kooha's issue page</a>."
+"The previously selected format may have been unavailable. Open preferences "
+"and select a format to continue recording."
 msgstr ""
-"Varmista, että tallennuspaikka on olemassa tai että se on käytettävissä. Jos "
-"se todella on olemassa tai on käytettävissä, jokin meni pieleen. Ilmoita <a "
-"href=\"https://github.com/SeaDve/Kooha/issues\">Koohan ongelmasivulle</a>."
+"Aiemmin valittu muoto ei mahdollisesti ole käytettävissä. Avaa asetukset ja "
+"valitse muoto jatkaaksesi tallennusta."
 
-#: src/widgets/main_window.rs:159
+#: src/window.rs:291
+msgid "Later"
+msgstr "Myöhemmin"
+
+#: src/window.rs:292
+msgid "Open"
+msgstr "Avaa"
+
+#: src/window.rs:350
 msgid "Paused"
 msgstr "Keskeytetty"
 
-#~ msgid "_Cancel"
-#~ msgstr "_Peru"
+#: src/window.rs:382
+msgid "Normal"
+msgstr "Normaali"
 
-#~ msgid "_Select"
-#~ msgstr "_Valitse"
+#: src/window.rs:383
+msgid "Selection"
+msgstr "Valinta"
 
-#~ msgid "Cannot access “{}”"
-#~ msgstr "Ei pääsyä kohteeseen “{}”"
+#~ msgid "Enable Desktop Sounds"
+#~ msgstr "Käytä työpöydän ääniä"
 
-#~ msgid "Please choose an accessible location and try again."
+#~ msgid "Disable Desktop Sounds"
+#~ msgstr "Poista käytöstä työpöydän äänet"
+
+#~ msgid "🎥 Capture your screen without any hassle."
+#~ msgstr "🎥 Nauhoita näyttösi sisältö vaivatta."
+
+#~ msgid "🎙️ Record your microphone, computer sounds, or both at the same time."
 #~ msgstr ""
-#~ "Valitse sijainti, johon käyttöoikeudet riittävät, ja yritä uudelleen."
+#~ "🎙️ Nauhoita tietokoneen äänet, mikrofonin äänet tai molemmat "
+#~ "samanaikaisesti."
+
+#~ msgid "📼 Support for WebM, MP4, GIF, and MKV formats."
+#~ msgstr "📼 Tuki WebM-, MP4-, GIF- ja MKV-tiedostomuodoille."
+
+#~ msgid "🗔 Multiple sources selection."
+#~ msgstr "🗔 Usein lähteiden valinta."
+
+#~ msgid "🚀 Optional hardware accelerated encoding"
+#~ msgstr "🚀 Valinnainen laitteistokiihdytys videon koodausta varten"
+
+#~ msgid "🖥️ Select a monitor or window to record."
+#~ msgstr "🖥️ Valitse näyttö tai ikkuna nauhoitettavaksi."
+
+#~ msgid "🖼️ Create a selection to capture certain area from your screen."
+#~ msgstr "🖼️ Valitse haluamasi alue näytöltä nauhoitettavaksi."
+
+#~ msgid "⏲️ Set delay to prepare before you start recording."
+#~ msgstr "⏲️ Aseta viive ennen nauhoituksen alkua."
+
+#~ msgid "🖱️ Hide or show mouse pointer."
+#~ msgstr "🖱️ Piilota tai näytä hiiren osoitin."
+
+#~ msgid "💾 Choose a saving location for your recording."
+#~ msgstr "💾 Valitse tallennussijainti nauhoitukselle."
+
+#~ msgid "⌨️ Utilize helpful keyboard shortcuts."
+#~ msgstr "⌨️ Hyödynnä käteviä pikanäppäimiä."
+
+#~ msgid "Toggle Computer Sounds"
+#~ msgstr "Tietokoneen äänet päälle/pois"
+
+#~ msgid "_Delay"
+#~ msgstr "_Viive"
+
+#~ msgid "3 seconds"
+#~ msgstr "3 sekuntia"
+
+#~ msgid "5 seconds"
+#~ msgstr "5 sekuntia"
+
+#~ msgid "10 seconds"
+#~ msgstr "10 sekuntia"
+
+#~ msgid "_Video Format"
+#~ msgstr "_Videon muoto"
+
+#~ msgid "MKV"
+#~ msgstr "MKV"
+
+#~ msgid "_Save to…"
+#~ msgstr "_Tallenna nimellä…"
+
+#~ msgid ""
+#~ "A GStreamer plugin may not be installed. If it is installed but still "
+#~ "does not work properly, please report to <a href=\"https://github.com/"
+#~ "SeaDve/Kooha/issues\">Kooha's issue page</a>."
+#~ msgstr ""
+#~ "GStreamer-lisäosaa ei ehkä ole asennettu. Jos se on asennettu, mutta ei "
+#~ "vieläkään toimi kunnolla, ilmoita siitä <a href=\"https://github.com/"
+#~ "SeaDve/Kooha/issues\">Koohan vikailmoitusjärjestelmään</a>."
+
+#~ msgid "Record Computer Sounds"
+#~ msgstr "Nauhoita tietokoneen äänet"
+
+#~ msgid "Record From Microphone"
+#~ msgstr "Nauhoita mikrofonista"
+
+#~ msgid "Dave Patrick"
+#~ msgstr "Dave Patrick"
+
+#~ msgid "Cancel Delay"
+#~ msgstr "Perumisen viive"
+
+#~ msgid "Copyright 2021 Dave Patrick"
+#~ msgstr "Tekijänoikeus 2021 Dave Patrick"
+
+#~ msgid "Screencast Recorded!"
+#~ msgstr "Näyttötallenne nauhoitettu!"
+
+#~ msgid "The recording has been saved in “{}”"
+#~ msgstr "Nauhoitus on tallennettu kohteeseen “{}”"
+
+#~ msgid "Open File"
+#~ msgstr "Avaa tiedosto"
+
+#~ msgid "Screencast Portal Request Error"
+#~ msgstr "Näyttötallenneportaalin pyyntövirhe"
+
+#~ msgid "Pipeline Build Error"
+#~ msgstr "Liukuhihnan käännösvirhe"
+
+#~ msgid "Recording Error"
+#~ msgstr "Nauhoitusvirhe"
+
+#~ msgid ""
+#~ "Make sure to check for the runtime dependencies and <a href=\"https://"
+#~ "github.com/SeaDve/Kooha#-it-doesnt-work\">It Doesn't Work page</a>."
+#~ msgstr ""
+#~ "Varmista, että tarkistat ajonaikaiset riippuvuudet ja <a href=\"https://"
+#~ "github.com/SeaDve/Kooha#-it-doesnt-work\">Se ei toimi -sivun</a>."
+
+#~ msgid ""
+#~ "Make sure that the saving location exists or is accessible. If it "
+#~ "actually exists or is accessible, something went wrong and please report "
+#~ "to <a href=\"https://github.com/SeaDve/Kooha/issues\">Kooha's issue page</"
+#~ "a>."
+#~ msgstr ""
+#~ "Varmista, että tallennuspaikka on olemassa tai että se on käytettävissä. "
+#~ "Jos se todella on olemassa tai on käytettävissä, jokin meni pieleen. "
+#~ "Ilmoita <a href=\"https://github.com/SeaDve/Kooha/issues\">Koohan "
+#~ "ongelmasivulle</a>."
 
 #~ msgid ""
 #~ "Make sure that the saving location exists. If it actually exists, "

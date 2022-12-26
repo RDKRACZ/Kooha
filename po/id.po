@@ -10,11 +10,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kooha\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-10 07:44+0800\n"
+"POT-Creation-Date: 2022-12-25 09:25+0800\n"
 "PO-Revision-Date: 2022-06-20 00:19+0000\n"
 "Last-Translator: liimee <alt3753.7@gmail.com>\n"
-"Language-Team: Indonesian <https://hosted.weblate.org/projects/kooha/"
-"pot-file/id/>\n"
+"Language-Team: Indonesian <https://hosted.weblate.org/projects/kooha/pot-"
+"file/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,12 +23,13 @@ msgstr ""
 "X-Generator: Weblate 4.13.1-dev\n"
 
 #: data/io.github.seadve.Kooha.desktop.in.in:3
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:7 src/application.rs:172
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:6 src/about.rs:20
+#: src/main.rs:63
 msgid "Kooha"
 msgstr "Kooha"
 
 #: data/io.github.seadve.Kooha.desktop.in.in:5
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:8 src/application.rs:173
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:7
 msgid "Elegantly record your screen"
 msgstr "Rekam layar Anda dengan elegan"
 
@@ -37,13 +38,13 @@ msgstr "Rekam layar Anda dengan elegan"
 msgid "Screencast;Recorder;Screen;Video;"
 msgstr "Screencast;Perekam;Layar;Video;"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:10
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:9
 msgid ""
 "Capture your screen in a intuitive and straightforward way without "
 "distractions."
 msgstr "Rekam layar Anda dengan cara yang intuitif dan mudah tanpa gangguan."
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:11
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:10
 msgid ""
 "Kooha is a simple screen recorder with a minimalist interface. You can just "
 "click the record button without having to configure a bunch of settings."
@@ -57,285 +58,553 @@ msgid "The main features of Kooha include the following:"
 msgstr "Fitur-fitur utama Kooha termasuk yang berikut ini:"
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:14
-msgid "🎥 Capture your screen without any hassle."
-msgstr "🎥 Rekam layar Anda tanpa repot-repot."
+msgid "🎙️ Record microphone, desktop audio, or both at the same time"
+msgstr ""
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:15
-msgid "🎙️ Record your microphone, computer sounds, or both at the same time."
+msgid "📼 Support for WebM, MP4, GIF, and Matroska formats"
 msgstr ""
-"🎙️ Rekam mikrofon Anda, suara komputer, atau keduanya di waktu yang sama."
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:16
-msgid "📼 Support for WebM, MP4, GIF, and MKV formats."
-msgstr "📼 Mendukung format WebM, MP4, GIF, dan MKV."
+msgid "🖥️ Select a monitor, a window, or a portion of the screen to record"
+msgstr ""
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:17
-msgid "🗔 Multiple sources selection."
-msgstr "🗔 Pilihan berbagai sumber."
+msgid "🗔 Multiple sources selection"
+msgstr ""
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:18
-msgid "🚀 Optional hardware accelerated encoding"
-msgstr "🚀 Opsi pengkodean dengan percepatan perangkat keras"
+msgid ""
+"🛠️ Configurable saving location, pointer visibility, frame rate, and delay"
+msgstr ""
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:19
-msgid "🖥️ Select a monitor or window to record."
-msgstr "🖥️ Pilih monitor atau jendela yang ingin direkam."
+msgid "🚀 Experimental hardware accelerated encoding"
+msgstr ""
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:20
-msgid "🖼️ Create a selection to capture certain area from your screen."
-msgstr "🖼️ Buat seleksi untuk menangkap area tertentu dari layar anda."
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:26 src/about.rs:21
+msgid "Dave Patrick Caberto"
+msgstr ""
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:21
-msgid "⏲️ Set delay to prepare before you start recording."
-msgstr "⏲️ Pasang penundaan untuk bersiap-siap sebelum mulai merekam."
+#: data/resources/ui/area-selector.ui:15
+msgid "Select Area"
+msgstr ""
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:22
-msgid "🖱️ Hide or show mouse pointer."
-msgstr "🖱️ Sembunyikan atau tampilkan penunjuk tetikus."
+#: data/resources/ui/area-selector.ui:20 data/resources/ui/window.ui:238
+#: data/resources/ui/window.ui:280
+msgid "Cancel"
+msgstr "Batal"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:23
-msgid "💾 Choose a saving location for your recording."
-msgstr "💾 Pilih lokasi penyimpanan untuk rekaman Anda."
+#: data/resources/ui/area-selector.ui:26
+msgid "Done"
+msgstr ""
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:24
-msgid "⌨️ Utilize helpful keyboard shortcuts."
-msgstr "⌨️ Manfaatkan pintasan keyboard yang berguna."
+#: data/resources/ui/area-selector.ui:35
+msgid "Reset Selection"
+msgstr ""
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:31
-msgid "Dave Patrick"
-msgstr "Dave Patrick"
-
-#: data/resources/ui/shortcuts.ui:10
+#: data/resources/ui/preferences-window.ui:11 data/resources/ui/shortcuts.ui:10
 msgid "General"
 msgstr "Umum"
+
+#: data/resources/ui/preferences-window.ui:14
+msgid "Delay (Seconds)"
+msgstr ""
+
+#: data/resources/ui/preferences-window.ui:32
+msgid "Recordings Folder"
+msgstr ""
+
+#: data/resources/ui/preferences-window.ui:51
+msgid "Video"
+msgstr ""
+
+#: data/resources/ui/preferences-window.ui:54
+msgid "Format"
+msgstr ""
+
+#: data/resources/ui/preferences-window.ui:59
+msgid "Frame Rate"
+msgstr ""
+
+#: data/resources/ui/preferences-window.ui:65
+msgid "This frame rate may cause performance issues."
+msgstr ""
 
 #: data/resources/ui/shortcuts.ui:14
 msgid "Open Menu"
 msgstr "Buka Menu"
 
 #: data/resources/ui/shortcuts.ui:20
+msgid "Show Preferences"
+msgstr ""
+
+#: data/resources/ui/shortcuts.ui:26
 msgid "Show Shortcuts"
 msgstr "Tampilkan Pintasan"
 
-#: data/resources/ui/shortcuts.ui:26
+#: data/resources/ui/shortcuts.ui:32
 msgid "Quit"
 msgstr "Keluar"
 
-#: data/resources/ui/shortcuts.ui:33 src/widgets/main_window.rs:154
+#: data/resources/ui/shortcuts.ui:39 src/window.rs:342
 msgid "Recording"
 msgstr "Merekam"
 
-#: data/resources/ui/shortcuts.ui:37
+#: data/resources/ui/shortcuts.ui:43
 msgid "Toggle Record"
 msgstr "Toggle Perekaman"
 
-#: data/resources/ui/shortcuts.ui:44
+#: data/resources/ui/shortcuts.ui:50
 msgid "Toggle Pause"
 msgstr "Toggle Jeda"
 
-#: data/resources/ui/shortcuts.ui:50 data/resources/ui/window.ui:237
-msgid "Cancel Delay"
-msgstr "Batalkan penundaan"
+#: data/resources/ui/shortcuts.ui:56
+msgid "Cancel Record"
+msgstr ""
 
-#: data/resources/ui/shortcuts.ui:57
+#: data/resources/ui/shortcuts.ui:63
 msgid "Settings"
 msgstr "Pengaturan"
 
-#: data/resources/ui/shortcuts.ui:61
-msgid "Toggle Computer Sounds"
-msgstr "Toggle Suara Komputer"
-
 #: data/resources/ui/shortcuts.ui:67
+msgid "Toggle Desktop Audio"
+msgstr ""
+
+#: data/resources/ui/shortcuts.ui:73
 msgid "Toggle Microphone"
 msgstr "Toggle Mikrofon"
 
-#: data/resources/ui/shortcuts.ui:73
+#: data/resources/ui/shortcuts.ui:79
 msgid "Toggle Pointer"
 msgstr "Toggle Penunjuk"
 
-#: data/resources/ui/window.ui:31
+#: data/resources/ui/window.ui:29
 msgid "Main Menu"
 msgstr "Menu Utama"
 
-#: data/resources/ui/window.ui:47
-msgid "Normal"
-msgstr "Normal"
-
-#: data/resources/ui/window.ui:57
-msgid "Selection"
-msgstr "Potongan"
-
-#: data/resources/ui/window.ui:86
+#: data/resources/ui/window.ui:58
 msgid "Capture a Monitor or Window"
 msgstr "Rekam Monitor atau Jendela"
 
-#: data/resources/ui/window.ui:94
+#: data/resources/ui/window.ui:71
 msgid "Capture a Selection of Screen"
 msgstr "Rekam Potongan dari Layar"
 
-#: data/resources/ui/window.ui:107
-msgid "Record Computer Sounds"
-msgstr "Rekam Suara Komputer"
+#: data/resources/ui/window.ui:91
+msgid "Enable Desktop Audio"
+msgstr ""
 
-#: data/resources/ui/window.ui:114
-msgid "Record From Microphone"
-msgstr "Rekam Dari Mikrofon"
+#: data/resources/ui/window.ui:92
+msgid "Disable Desktop Audio"
+msgstr ""
 
-#: data/resources/ui/window.ui:121
+#: data/resources/ui/window.ui:100
+msgid "Enable Microphone"
+msgstr ""
+
+#: data/resources/ui/window.ui:101
+msgid "Disable Microphone"
+msgstr ""
+
+#: data/resources/ui/window.ui:109
 msgid "Show Pointer"
 msgstr "Tampilkan Penunjuk"
 
-#: data/resources/ui/window.ui:128
+#: data/resources/ui/window.ui:110
+msgid "Hide Pointer"
+msgstr ""
+
+#: data/resources/ui/window.ui:120
+msgid "Start Recording"
+msgstr ""
+
+#: data/resources/ui/window.ui:121
 msgid "Record"
 msgstr "Rekam"
 
-#: data/resources/ui/window.ui:182
+#: data/resources/ui/window.ui:134
+msgid "Forget Previously Selected Video Sources"
+msgstr ""
+
+#: data/resources/ui/window.ui:185
+msgid "Stop Recording"
+msgstr ""
+
+#: data/resources/ui/window.ui:186
 msgid "Stop"
 msgstr "Berhenti"
+
+#: data/resources/ui/window.ui:196
+msgid "Pause Recording"
+msgstr ""
 
 #: data/resources/ui/window.ui:219
 msgid "Recording in…"
 msgstr "Merekam dalam…"
 
-#: data/resources/ui/window.ui:258
+#: data/resources/ui/window.ui:237 data/resources/ui/window.ui:279
+msgid "Cancel Recording"
+msgstr ""
+
+#: data/resources/ui/window.ui:262
 msgid "Flushing…"
 msgstr "Membersihkan…"
 
-#: data/resources/ui/window.ui:283
-msgid "_Delay"
-msgstr "_Penundaan"
-
-#: data/resources/ui/window.ui:285
-msgid "None"
-msgstr "Tidak ada"
-
-#: data/resources/ui/window.ui:290
-msgid "5 seconds"
-msgstr "5 detik"
-
-#: data/resources/ui/window.ui:295
-msgid "10 seconds"
-msgstr "10 detik"
+#: data/resources/ui/window.ui:297
+msgid "_Preferences"
+msgstr ""
 
 #: data/resources/ui/window.ui:301
-msgid "_Video Format"
-msgstr "Format _Video"
-
-#: data/resources/ui/window.ui:303
-msgid "WebM"
-msgstr "WebM"
-
-#: data/resources/ui/window.ui:308
-msgid "MKV"
-msgstr "MKV"
-
-#: data/resources/ui/window.ui:313
-msgid "MP4"
-msgstr "MP4"
-
-#: data/resources/ui/window.ui:318
-msgid "GIF"
-msgstr "GIF"
-
-#: data/resources/ui/window.ui:324
-msgid "_Save to…"
-msgstr "_Simpan di…"
-
-#: data/resources/ui/window.ui:330
 msgid "_Keyboard Shortcuts"
 msgstr "_Pintasan Papan Ketik"
 
-#: data/resources/ui/window.ui:334
+#: data/resources/ui/window.ui:305
 msgid "_About Kooha"
 msgstr "_Tentang Kooha"
 
-#: src/application.rs:138
-msgid "Select Recordings Folder"
-msgstr "Pilih Folder Rekaman"
+#: src/about.rs:23
+msgid "© 2022 Dave Patrick Caberto"
+msgstr ""
 
 #. Translators: Replace "translator-credits" with your names. Put a comma between.
-#: src/application.rs:183
+#: src/about.rs:31
 msgid "translator-credits"
 msgstr ""
 "@liimee\n"
 "Hervy Qurrotul Ainur Rozi\n"
 "Reza Almanda"
 
-#: src/application.rs:184
-msgid "Copyright 2021 Dave Patrick"
-msgstr "Hak Cipta 2021 Dave Patrick"
+#: src/about.rs:41
+msgid "Donate (Liberapay)"
+msgstr ""
 
-#: src/application.rs:187
+#: src/about.rs:45
+msgid "Donate (PayPal)"
+msgstr ""
+
+#: src/about.rs:49
 msgid "GitHub"
 msgstr "GitHub"
 
-#: src/application.rs:208
-msgid "Screencast Recorded!"
-msgstr "Screencast Direkam!"
-
-#: src/application.rs:210
-msgid "The recording has been saved in “{}”"
-msgstr "Rekaman telah disimpan di \"{}\""
-
-#: src/application.rs:218
-msgid "Open File"
-msgstr "Buka Berkas"
-
-#: src/error.rs:17
-msgid "Screencast Portal Request Error"
-msgstr "Kesalahan Permintaan Screencast Portal"
-
-#: src/error.rs:18
-msgid "Pipeline Build Error"
-msgstr "Kesalahan Pipeline Build"
-
-#: src/error.rs:19
-msgid "Recording Error"
-msgstr "Kesalahan Perekaman"
-
-#: src/error.rs:47
-msgid ""
-"Make sure to check for the runtime dependencies and <a href=\"https://github."
-"com/SeaDve/Kooha#-it-doesnt-work\">It Doesn't Work page</a>."
+#: src/about.rs:51
+msgid "Translate"
 msgstr ""
-"Pastikan untuk memeriksa ketergantungan runtime dan <a href=\"https://github."
-"com/SeaDve/Kooha#-it-doesnt-work\">laman Ini Tidak Berfungsi</a>."
 
-#: src/error.rs:48
-msgid ""
-"A GStreamer plugin may not be installed. If it is installed but still does "
-"not work properly, please report to <a href=\"https://github.com/SeaDve/"
-"Kooha/issues\">Kooha's issue page</a>."
+#. Translators: This is a message that the user will see when the recording is finished.
+#: src/application.rs:107
+msgid "Screencast recorded"
 msgstr ""
-"Sebuah plugin GStreamer mungkin tidak terpasang. Jika itu sudah terpasang "
-"namun masih belum bekerja, harap laporkan ke <a href=\"https://github.com/"
-"SeaDve/Kooha/issues\">halaman masalah Kooha</a>."
 
-#: src/error.rs:49
-msgid ""
-"Make sure that the saving location exists or is accessible. If it actually "
-"exists or is accessible, something went wrong and please report to <a href="
-"\"https://github.com/SeaDve/Kooha/issues\">Kooha's issue page</a>."
+#: src/application.rs:108
+msgid "Click here to view the video."
 msgstr ""
-"Pastikan lokasi penyimpanan ada dan dapat diakses. Jika lokasi tersebut "
-"benar-benar ada dan dapat diakses, ada masalah dan harap melaporkannya ke <a "
-"href=\"https://github.com/SeaDve/Kooha/issues\">halaman masalah Kooha</a>."
 
-#: src/widgets/main_window.rs:159
+#: src/application.rs:114
+msgid "Show in Files"
+msgstr ""
+
+#: src/area_selector/mod.rs:318
+msgid "approx."
+msgstr ""
+
+#: src/audio_device.rs:53 src/audio_device.rs:175
+msgid "Make sure that you have PulseAudio installed in your system."
+msgstr ""
+
+#: src/audio_device.rs:54
+msgid "Failed to start device monitor"
+msgstr ""
+
+#: src/audio_device.rs:176
+msgid "Failed to connect to PulseAudio daemon"
+msgstr ""
+
+#: src/preferences_window.rs:225
+msgid "This format is experimental and unsupported."
+msgstr ""
+
+#: src/preferences_window.rs:254
+msgid "None"
+msgstr "Tidak ada"
+
+#: src/profile.rs:115
+msgid "GIF"
+msgstr "GIF"
+
+#: src/profile.rs:266
+msgid "WebM"
+msgstr "WebM"
+
+#: src/profile.rs:290
+msgid "MP4"
+msgstr "MP4"
+
+#: src/profile.rs:309
+msgid "Matroska"
+msgstr ""
+
+#: src/profile.rs:342
+msgid "WebM VP9"
+msgstr ""
+
+#: src/profile.rs:366
+msgid "WebM AV1"
+msgstr ""
+
+#: src/profile.rs:387
+msgid "WebM VAAPI VP8"
+msgstr ""
+
+#: src/profile.rs:402
+msgid "WebM VAAPI VP9"
+msgstr ""
+
+#: src/profile.rs:417
+msgid "WebM VAAPI H264"
+msgstr ""
+
+#: src/recording.rs:37
+msgid "No active profile"
+msgstr ""
+
+#. Translators: {} will be replaced with a link to a webpage.
+#. github.com/SeaDve/Kooha#-it-doesnt-work">It Doesn't Work page</a>"#),
+#: src/recording.rs:196 src/recording.rs:250 src/recording.rs:274
+msgid "Failed to start recording"
+msgstr ""
+
+#. Translators: {} will be replaced with a link to a webpage.
+#: src/recording.rs:195
+msgid "Check out {} for help."
+msgstr ""
+
+#: src/recording.rs:235
+msgid "No microphone source found"
+msgstr ""
+
+#: src/recording.rs:242
+msgid "No desktop speaker source found"
+msgstr ""
+
+#: src/recording.rs:249
+msgid "A GStreamer plugin may not be installed."
+msgstr ""
+
+#: src/recording.rs:273 src/recording.rs:495
+msgid "Make sure that the saving location exists and is accessible."
+msgstr ""
+
+#: src/recording.rs:491
+msgid "An error occurred while recording"
+msgstr ""
+
+#. Translators: {} will be replaced with a path to the folder.
+#: src/recording.rs:503
+msgid "Failed to open “{}” for writing"
+msgstr ""
+
+#: src/recording.rs:505
+msgid "Failed to open file for writing"
+msgstr ""
+
+#: src/settings.rs:42
+msgid "Select Recordings Folder"
+msgstr "Pilih Folder Rekaman"
+
+#: src/settings.rs:52
+msgid "_Cancel"
+msgstr "_Batal"
+
+#: src/settings.rs:53
+msgid "_Select"
+msgstr "Pi_lih"
+
+#: src/settings.rs:67
+msgid "No folder selected"
+msgstr ""
+
+#: src/settings.rs:68
+msgid "Please choose a folder and try again."
+msgstr ""
+
+#. Translators: {} will be replaced with a path to the folder.
+#: src/settings.rs:77
+msgid "Cannot access “{}”"
+msgstr "Tidak dapat mengakses \"{}\""
+
+#: src/settings.rs:78
+msgid "Please choose an accessible location and try again."
+msgstr "Harap pilih lokasi yang dapat diakses dan coba lagi."
+
+#: src/settings.rs:189 src/window.rs:214
+msgid "Ok"
+msgstr ""
+
+#: src/window.rs:70
+msgid "Failed to toggle pause"
+msgstr ""
+
+#: src/window.rs:177
+msgid "Copy to clipboard"
+msgstr ""
+
+#: src/window.rs:183
+msgid "Copied to clipboard"
+msgstr ""
+
+#: src/window.rs:189
+msgid "Show detailed error"
+msgstr ""
+
+#: src/window.rs:211
+msgid "Help"
+msgstr ""
+
+#: src/window.rs:285
+msgid "Open Preferences?"
+msgstr ""
+
+#: src/window.rs:286
+msgid ""
+"The previously selected format may have been unavailable. Open preferences "
+"and select a format to continue recording."
+msgstr ""
+
+#: src/window.rs:291
+msgid "Later"
+msgstr ""
+
+#: src/window.rs:292
+msgid "Open"
+msgstr "Buka"
+
+#: src/window.rs:350
 msgid "Paused"
 msgstr "Dijeda"
 
-#~ msgid "_Cancel"
-#~ msgstr "_Batal"
+#: src/window.rs:382
+msgid "Normal"
+msgstr "Normal"
 
-#~ msgid "_Select"
-#~ msgstr "Pi_lih"
+#: src/window.rs:383
+msgid "Selection"
+msgstr "Potongan"
 
-#~ msgid "Cannot access “{}”"
-#~ msgstr "Tidak dapat mengakses \"{}\""
+#~ msgid "🎥 Capture your screen without any hassle."
+#~ msgstr "🎥 Rekam layar Anda tanpa repot-repot."
 
-#~ msgid "Please choose an accessible location and try again."
-#~ msgstr "Harap pilih lokasi yang dapat diakses dan coba lagi."
+#~ msgid "🎙️ Record your microphone, computer sounds, or both at the same time."
+#~ msgstr ""
+#~ "🎙️ Rekam mikrofon Anda, suara komputer, atau keduanya di waktu yang sama."
+
+#~ msgid "📼 Support for WebM, MP4, GIF, and MKV formats."
+#~ msgstr "📼 Mendukung format WebM, MP4, GIF, dan MKV."
+
+#~ msgid "🗔 Multiple sources selection."
+#~ msgstr "🗔 Pilihan berbagai sumber."
+
+#~ msgid "🚀 Optional hardware accelerated encoding"
+#~ msgstr "🚀 Opsi pengkodean dengan percepatan perangkat keras"
+
+#~ msgid "🖥️ Select a monitor or window to record."
+#~ msgstr "🖥️ Pilih monitor atau jendela yang ingin direkam."
+
+#~ msgid "🖼️ Create a selection to capture certain area from your screen."
+#~ msgstr "🖼️ Buat seleksi untuk menangkap area tertentu dari layar anda."
+
+#~ msgid "⏲️ Set delay to prepare before you start recording."
+#~ msgstr "⏲️ Pasang penundaan untuk bersiap-siap sebelum mulai merekam."
+
+#~ msgid "🖱️ Hide or show mouse pointer."
+#~ msgstr "🖱️ Sembunyikan atau tampilkan penunjuk tetikus."
+
+#~ msgid "💾 Choose a saving location for your recording."
+#~ msgstr "💾 Pilih lokasi penyimpanan untuk rekaman Anda."
+
+#~ msgid "⌨️ Utilize helpful keyboard shortcuts."
+#~ msgstr "⌨️ Manfaatkan pintasan keyboard yang berguna."
+
+#~ msgid "Toggle Computer Sounds"
+#~ msgstr "Toggle Suara Komputer"
+
+#~ msgid "_Delay"
+#~ msgstr "_Penundaan"
+
+#~ msgid "5 seconds"
+#~ msgstr "5 detik"
+
+#~ msgid "10 seconds"
+#~ msgstr "10 detik"
+
+#~ msgid "_Video Format"
+#~ msgstr "Format _Video"
+
+#~ msgid "MKV"
+#~ msgstr "MKV"
+
+#~ msgid "_Save to…"
+#~ msgstr "_Simpan di…"
+
+#~ msgid ""
+#~ "A GStreamer plugin may not be installed. If it is installed but still "
+#~ "does not work properly, please report to <a href=\"https://github.com/"
+#~ "SeaDve/Kooha/issues\">Kooha's issue page</a>."
+#~ msgstr ""
+#~ "Sebuah plugin GStreamer mungkin tidak terpasang. Jika itu sudah terpasang "
+#~ "namun masih belum bekerja, harap laporkan ke <a href=\"https://github.com/"
+#~ "SeaDve/Kooha/issues\">halaman masalah Kooha</a>."
+
+#~ msgid "Record Computer Sounds"
+#~ msgstr "Rekam Suara Komputer"
+
+#~ msgid "Record From Microphone"
+#~ msgstr "Rekam Dari Mikrofon"
+
+#~ msgid "Dave Patrick"
+#~ msgstr "Dave Patrick"
+
+#~ msgid "Cancel Delay"
+#~ msgstr "Batalkan penundaan"
+
+#~ msgid "Copyright 2021 Dave Patrick"
+#~ msgstr "Hak Cipta 2021 Dave Patrick"
+
+#~ msgid "Screencast Recorded!"
+#~ msgstr "Screencast Direkam!"
+
+#~ msgid "The recording has been saved in “{}”"
+#~ msgstr "Rekaman telah disimpan di \"{}\""
+
+#~ msgid "Open File"
+#~ msgstr "Buka Berkas"
+
+#~ msgid "Screencast Portal Request Error"
+#~ msgstr "Kesalahan Permintaan Screencast Portal"
+
+#~ msgid "Pipeline Build Error"
+#~ msgstr "Kesalahan Pipeline Build"
+
+#~ msgid "Recording Error"
+#~ msgstr "Kesalahan Perekaman"
+
+#~ msgid ""
+#~ "Make sure to check for the runtime dependencies and <a href=\"https://"
+#~ "github.com/SeaDve/Kooha#-it-doesnt-work\">It Doesn't Work page</a>."
+#~ msgstr ""
+#~ "Pastikan untuk memeriksa ketergantungan runtime dan <a href=\"https://"
+#~ "github.com/SeaDve/Kooha#-it-doesnt-work\">laman Ini Tidak Berfungsi</a>."
+
+#~ msgid ""
+#~ "Make sure that the saving location exists or is accessible. If it "
+#~ "actually exists or is accessible, something went wrong and please report "
+#~ "to <a href=\"https://github.com/SeaDve/Kooha/issues\">Kooha's issue page</"
+#~ "a>."
+#~ msgstr ""
+#~ "Pastikan lokasi penyimpanan ada dan dapat diakses. Jika lokasi tersebut "
+#~ "benar-benar ada dan dapat diakses, ada masalah dan harap melaporkannya ke "
+#~ "<a href=\"https://github.com/SeaDve/Kooha/issues\">halaman masalah Kooha</"
+#~ "a>."
 
 #~ msgid ""
 #~ "A GStreamer plugin may not be installed. If not, please report to <a href="
@@ -443,9 +712,6 @@ msgstr "Dijeda"
 #~ msgid "Failed to create session."
 #~ msgstr "Gagal membuat session."
 
-#~ msgid "Cancel"
-#~ msgstr "Batal"
-
 #~ msgid "Select"
 #~ msgstr "Pilih"
 
@@ -476,9 +742,6 @@ msgstr "Dijeda"
 
 #~ msgid "The recording has been saved in"
 #~ msgstr "Rekaman telah disimpan di"
-
-#~ msgid "Open"
-#~ msgstr "Buka"
 
 #~ msgid "Record computer sounds"
 #~ msgstr "Toggle suara komputer"

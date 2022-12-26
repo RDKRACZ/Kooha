@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kooha\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-10 07:44+0800\n"
-"PO-Revision-Date: 2022-05-13 17:17+0000\n"
+"POT-Creation-Date: 2022-12-25 09:25+0800\n"
+"PO-Revision-Date: 2022-10-26 20:07+0000\n"
 "Last-Translator: Sergio Varela <sergitroll9@gmail.com>\n"
 "Language-Team: Basque <https://hosted.weblate.org/projects/kooha/pot-file/eu/"
 ">\n"
@@ -16,15 +16,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13-dev\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 #: data/io.github.seadve.Kooha.desktop.in.in:3
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:7 src/application.rs:172
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:6 src/about.rs:20
+#: src/main.rs:63
 msgid "Kooha"
 msgstr "Kooha"
 
 #: data/io.github.seadve.Kooha.desktop.in.in:5
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:8 src/application.rs:173
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:7
 msgid "Elegantly record your screen"
 msgstr "Grabatu zure pantaila dotoretasunez"
 
@@ -33,14 +34,14 @@ msgstr "Grabatu zure pantaila dotoretasunez"
 msgid "Screencast;Recorder;Screen;Video;"
 msgstr "Screencast;Grabatzailea;Pantaila;Bideoa;"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:10
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:9
 msgid ""
 "Capture your screen in a intuitive and straightforward way without "
 "distractions."
 msgstr ""
 "Grabatu zure pantaila modu intuitiboan eta zuzenean distrakziorik gabe."
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:11
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:10
 msgid ""
 "Kooha is a simple screen recorder with a minimalist interface. You can just "
 "click the record button without having to configure a bunch of settings."
@@ -54,281 +55,562 @@ msgid "The main features of Kooha include the following:"
 msgstr "Kooharen ezaugarri nagusiak hauek dira:"
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:14
-msgid "🎥 Capture your screen without any hassle."
-msgstr "🎥 Kapturatu pantaila arazorik gabe."
+msgid "🎙️ Record microphone, desktop audio, or both at the same time"
+msgstr "🎙️ Grabatu mikrofonoa, mahaigaineko audioa edo biak batera"
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:15
-msgid "🎙️ Record your microphone, computer sounds, or both at the same time."
-msgstr "🎙️ Grabatu zure mikrofonoa, ordenagailuko soinuak edo biak batera."
+msgid "📼 Support for WebM, MP4, GIF, and Matroska formats"
+msgstr "📼 Bateragarritasuna WebM, MP4, GIF eta Matroska formatuekin"
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:16
-msgid "📼 Support for WebM, MP4, GIF, and MKV formats."
-msgstr "📼 WebM, MP4, GIF eta MKV formatuetarako euskarria."
+msgid "🖥️ Select a monitor, a window, or a portion of the screen to record"
+msgstr "🖥️ Aukeratu monitore bat, leiho bat edo pantailaren zati bat grabatzeko"
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:17
-msgid "🗔 Multiple sources selection."
-msgstr "🗔 Hainbat iturrien hautaketa."
+msgid "🗔 Multiple sources selection"
+msgstr "🗔 Hainbat iturri hautatu"
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:18
-msgid "🚀 Optional hardware accelerated encoding"
-msgstr "🚀 Hardware bidezko kodetze azeleratua, aukerakoa"
+msgid ""
+"🛠️ Configurable saving location, pointer visibility, frame rate, and delay"
+msgstr ""
+"🛠️ Gordetzearen konfiguragarrien kokapena, punteroaren ikuspena, fotogramen "
+"tasa eta atzerapenak"
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:19
-msgid "🖥️ Select a monitor or window to record."
-msgstr "🖥️ Grabatzeko monitore edo leiho bat hautatu."
+msgid "🚀 Experimental hardware accelerated encoding"
+msgstr "🚀 Hardware bidezko kodetze esperimental azeleratua"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:20
-msgid "🖼️ Create a selection to capture certain area from your screen."
-msgstr "🖼️ Jarri aukera bat zure pantailako eremu jakin bat hartzeko."
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:26 src/about.rs:21
+msgid "Dave Patrick Caberto"
+msgstr "Dave Patrick Caberto"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:21
-msgid "⏲️ Set delay to prepare before you start recording."
-msgstr "⏲️ Grabatzen hasi aurretik prestatzeko atzerapena ezarri."
+#: data/resources/ui/area-selector.ui:15
+msgid "Select Area"
+msgstr "Aukeratu arloa"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:22
-msgid "🖱️ Hide or show mouse pointer."
-msgstr "🖱️ Saguaren erakuslea ezkutatu edo erakutsi."
+#: data/resources/ui/area-selector.ui:20 data/resources/ui/window.ui:238
+#: data/resources/ui/window.ui:280
+msgid "Cancel"
+msgstr "Ezeztatu"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:23
-msgid "💾 Choose a saving location for your recording."
-msgstr "💾 Aukeratu grabazioa gordetzeko kokaleku bat."
+#: data/resources/ui/area-selector.ui:26
+msgid "Done"
+msgstr "Eginda"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:24
-msgid "⌨️ Utilize helpful keyboard shortcuts."
-msgstr "⌨️ Teklatu-lasterbideak erabili."
+#: data/resources/ui/area-selector.ui:35
+msgid "Reset Selection"
+msgstr "Berrabiarazi hautaketa"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:31
-msgid "Dave Patrick"
-msgstr "Dave Patrick"
-
-#: data/resources/ui/shortcuts.ui:10
+#: data/resources/ui/preferences-window.ui:11 data/resources/ui/shortcuts.ui:10
 msgid "General"
 msgstr "Orokorra"
+
+#: data/resources/ui/preferences-window.ui:14
+msgid "Delay (Seconds)"
+msgstr "Atzerapena (segundoak)"
+
+#: data/resources/ui/preferences-window.ui:32
+msgid "Recordings Folder"
+msgstr "Grabazioen karpeta"
+
+#: data/resources/ui/preferences-window.ui:51
+msgid "Video"
+msgstr "Bideoa"
+
+#: data/resources/ui/preferences-window.ui:54
+msgid "Format"
+msgstr "Formatua"
+
+#: data/resources/ui/preferences-window.ui:59
+msgid "Frame Rate"
+msgstr "Fotogramen tasa"
+
+#: data/resources/ui/preferences-window.ui:65
+msgid "This frame rate may cause performance issues."
+msgstr "Fotogramen tasa horrek errendimendu-arazoak eragin ditzake."
 
 #: data/resources/ui/shortcuts.ui:14
 msgid "Open Menu"
 msgstr "Ireki menua"
 
 #: data/resources/ui/shortcuts.ui:20
+msgid "Show Preferences"
+msgstr "Erakutsi ezarpenak"
+
+#: data/resources/ui/shortcuts.ui:26
 msgid "Show Shortcuts"
 msgstr "Erakutsi sarbide zuzenak"
 
-#: data/resources/ui/shortcuts.ui:26
+#: data/resources/ui/shortcuts.ui:32
 msgid "Quit"
 msgstr "Utzi"
 
-#: data/resources/ui/shortcuts.ui:33 src/widgets/main_window.rs:154
+#: data/resources/ui/shortcuts.ui:39 src/window.rs:342
 msgid "Recording"
 msgstr "Grabatzen"
 
-#: data/resources/ui/shortcuts.ui:37
+#: data/resources/ui/shortcuts.ui:43
 msgid "Toggle Record"
 msgstr "Txandakatu grabazioa"
 
-#: data/resources/ui/shortcuts.ui:44
+#: data/resources/ui/shortcuts.ui:50
 msgid "Toggle Pause"
 msgstr "Txandakatu etenaldia"
 
-#: data/resources/ui/shortcuts.ui:50 data/resources/ui/window.ui:237
-msgid "Cancel Delay"
-msgstr "Atzerapena bertan behera utzi"
+#: data/resources/ui/shortcuts.ui:56
+msgid "Cancel Record"
+msgstr "Bertan behera utzi grabazioa"
 
-#: data/resources/ui/shortcuts.ui:57
+#: data/resources/ui/shortcuts.ui:63
 msgid "Settings"
 msgstr "Doikuntzak"
 
-#: data/resources/ui/shortcuts.ui:61
-msgid "Toggle Computer Sounds"
-msgstr "Ordenagailuko soinuak txandakatu"
-
 #: data/resources/ui/shortcuts.ui:67
+msgid "Toggle Desktop Audio"
+msgstr "Mahaigaineko audioa aldatu"
+
+#: data/resources/ui/shortcuts.ui:73
 msgid "Toggle Microphone"
 msgstr "Mikrofonoa txandakatu"
 
-#: data/resources/ui/shortcuts.ui:73
+#: data/resources/ui/shortcuts.ui:79
 msgid "Toggle Pointer"
 msgstr "Txandakatu punteroa"
 
-#: data/resources/ui/window.ui:31
+#: data/resources/ui/window.ui:29
 msgid "Main Menu"
 msgstr "Menu nagusia"
 
-#: data/resources/ui/window.ui:47
-msgid "Normal"
-msgstr "Normala"
-
-#: data/resources/ui/window.ui:57
-msgid "Selection"
-msgstr "Selekzio-eremua"
-
-#: data/resources/ui/window.ui:86
+#: data/resources/ui/window.ui:58
 msgid "Capture a Monitor or Window"
 msgstr "Monitore bat edo leiho bat harrapatu"
 
-#: data/resources/ui/window.ui:94
+#: data/resources/ui/window.ui:71
 msgid "Capture a Selection of Screen"
 msgstr "Pantaila-aukera bat atzeman"
 
-#: data/resources/ui/window.ui:107
-msgid "Record Computer Sounds"
-msgstr "Ordenagailu-soinuak grabatu"
+#: data/resources/ui/window.ui:91
+msgid "Enable Desktop Audio"
+msgstr "Mahaigaineko audioa aktibatu"
 
-#: data/resources/ui/window.ui:114
-msgid "Record From Microphone"
-msgstr "Mikrofonotik grabatu"
+#: data/resources/ui/window.ui:92
+msgid "Disable Desktop Audio"
+msgstr "Desaktibatu mahaigaineko audioa"
 
-#: data/resources/ui/window.ui:121
+#: data/resources/ui/window.ui:100
+msgid "Enable Microphone"
+msgstr "Aktibatu mikrofonoa"
+
+#: data/resources/ui/window.ui:101
+msgid "Disable Microphone"
+msgstr "Desaktibatu mikrofonoa"
+
+#: data/resources/ui/window.ui:109
 msgid "Show Pointer"
 msgstr "Erakutsi punteroa"
 
-#: data/resources/ui/window.ui:128
+#: data/resources/ui/window.ui:110
+msgid "Hide Pointer"
+msgstr "Ezkutatu sagua"
+
+#: data/resources/ui/window.ui:120
+msgid "Start Recording"
+msgstr "Hasi grabatzen"
+
+#: data/resources/ui/window.ui:121
 msgid "Record"
 msgstr "Grabatu"
 
-#: data/resources/ui/window.ui:182
+#: data/resources/ui/window.ui:134
+msgid "Forget Previously Selected Video Sources"
+msgstr "Aurretik hautatutako bideo-iturriak ahaztu"
+
+#: data/resources/ui/window.ui:185
+msgid "Stop Recording"
+msgstr "Gelditu grabazioa"
+
+#: data/resources/ui/window.ui:186
 msgid "Stop"
 msgstr "Gelditu"
+
+#: data/resources/ui/window.ui:196
+msgid "Pause Recording"
+msgstr "Gelditu grabazioa"
 
 #: data/resources/ui/window.ui:219
 msgid "Recording in…"
 msgstr "Grabatzen…"
 
-#: data/resources/ui/window.ui:258
+#: data/resources/ui/window.ui:237 data/resources/ui/window.ui:279
+msgid "Cancel Recording"
+msgstr "Bertan behera utzi grabazioa"
+
+#: data/resources/ui/window.ui:262
 msgid "Flushing…"
 msgstr "Purgatzen…"
 
-#: data/resources/ui/window.ui:283
-msgid "_Delay"
-msgstr "_Atzerapena"
-
-#: data/resources/ui/window.ui:285
-msgid "None"
-msgstr "Bat ere ez"
-
-#: data/resources/ui/window.ui:290
-msgid "5 seconds"
-msgstr "5 segundo"
-
-#: data/resources/ui/window.ui:295
-msgid "10 seconds"
-msgstr "10 segundo"
+#: data/resources/ui/window.ui:297
+msgid "_Preferences"
+msgstr "_Ezarpenak"
 
 #: data/resources/ui/window.ui:301
-msgid "_Video Format"
-msgstr "_Bideo-formatua"
-
-#: data/resources/ui/window.ui:303
-msgid "WebM"
-msgstr "WebM"
-
-#: data/resources/ui/window.ui:308
-msgid "MKV"
-msgstr "MKV"
-
-#: data/resources/ui/window.ui:313
-msgid "MP4"
-msgstr "MP4"
-
-#: data/resources/ui/window.ui:318
-msgid "GIF"
-msgstr "GIF"
-
-#: data/resources/ui/window.ui:324
-msgid "_Save to…"
-msgstr "_Gorde hemen…"
-
-#: data/resources/ui/window.ui:330
 msgid "_Keyboard Shortcuts"
 msgstr "_Teklatu-lasterbideak"
 
-#: data/resources/ui/window.ui:334
+#: data/resources/ui/window.ui:305
 msgid "_About Kooha"
 msgstr "_Koohari buruz"
 
-#: src/application.rs:138
-msgid "Select Recordings Folder"
-msgstr "Aukeratu grabazioen karpeta"
+#: src/about.rs:23
+msgid "© 2022 Dave Patrick Caberto"
+msgstr "© 2022 Dave Patrick Caberto"
 
 #. Translators: Replace "translator-credits" with your names. Put a comma between.
-#: src/application.rs:183
+#: src/about.rs:31
 msgid "translator-credits"
 msgstr "Sergio Varela"
 
-#: src/application.rs:184
-msgid "Copyright 2021 Dave Patrick"
-msgstr "Copyright © 2021 Dave Patrick"
+#: src/about.rs:41
+msgid "Donate (Liberapay)"
+msgstr "Dohaintza (Liberapay)"
 
-#: src/application.rs:187
+#: src/about.rs:45
+msgid "Donate (PayPal)"
+msgstr "Dohaintza (PayPal)"
+
+#: src/about.rs:49
 msgid "GitHub"
 msgstr "GitHub"
 
-#: src/application.rs:208
-msgid "Screencast Recorded!"
-msgstr "Pantaila grabatua atzematea!"
+#: src/about.rs:51
+msgid "Translate"
+msgstr "Itzuli"
 
-#: src/application.rs:210
-msgid "The recording has been saved in “{}”"
-msgstr "Grabazioa “{}” -n gorde da"
+#. Translators: This is a message that the user will see when the recording is finished.
+#: src/application.rs:107
+msgid "Screencast recorded"
+msgstr "Pantailaren grabazioa amaituta"
 
-#: src/application.rs:218
-msgid "Open File"
-msgstr "Ireki artxiboa"
+#: src/application.rs:108
+msgid "Click here to view the video."
+msgstr "Egin klik hemen bideoa ikusteko."
 
-#: src/error.rs:17
-msgid "Screencast Portal Request Error"
-msgstr "Errorea screencast atariko eskaeran"
+#: src/application.rs:114
+msgid "Show in Files"
+msgstr "Artxiboetan erakutsi"
 
-#: src/error.rs:18
-msgid "Pipeline Build Error"
-msgstr "Errorea pipelina eraikitzean"
+#: src/area_selector/mod.rs:318
+msgid "approx."
+msgstr "gutxi gorabehera"
 
-#: src/error.rs:19
-msgid "Recording Error"
-msgstr "Grabazio-errorea"
+#: src/audio_device.rs:53 src/audio_device.rs:175
+msgid "Make sure that you have PulseAudio installed in your system."
+msgstr "Ziurtatu PulseAudio instalatuta duzula zure sisteman."
 
-#: src/error.rs:47
+#: src/audio_device.rs:54
+msgid "Failed to start device monitor"
+msgstr "Ezin izan da sistemaren monitorea hasi"
+
+#: src/audio_device.rs:176
+msgid "Failed to connect to PulseAudio daemon"
+msgstr "Akatsa PulseAudio deabruarekiko konexioan"
+
+#: src/preferences_window.rs:225
+msgid "This format is experimental and unsupported."
+msgstr "Formatu hau esperimentala da eta ezin da jasan."
+
+#: src/preferences_window.rs:254
+msgid "None"
+msgstr "Bat ere ez"
+
+#: src/profile.rs:115
+msgid "GIF"
+msgstr "GIF"
+
+#: src/profile.rs:266
+msgid "WebM"
+msgstr "WebM"
+
+#: src/profile.rs:290
+msgid "MP4"
+msgstr "MP4"
+
+#: src/profile.rs:309
+msgid "Matroska"
+msgstr "Matroska"
+
+#: src/profile.rs:342
+msgid "WebM VP9"
+msgstr "WebM VP9"
+
+#: src/profile.rs:366
+msgid "WebM AV1"
+msgstr "WebM AV1"
+
+#: src/profile.rs:387
+msgid "WebM VAAPI VP8"
+msgstr "WebM VAAPI VP8"
+
+#: src/profile.rs:402
+msgid "WebM VAAPI VP9"
+msgstr "WebM VAAPI VP9"
+
+#: src/profile.rs:417
+msgid "WebM VAAPI H264"
+msgstr "WebM VAAPI H264"
+
+#: src/recording.rs:37
+msgid "No active profile"
+msgstr "Ez dago profil aktiborik"
+
+#. Translators: {} will be replaced with a link to a webpage.
+#. github.com/SeaDve/Kooha#-it-doesnt-work">It Doesn't Work page</a>"#),
+#: src/recording.rs:196 src/recording.rs:250 src/recording.rs:274
+msgid "Failed to start recording"
+msgstr "Ezin izan da grabazioa hasi"
+
+#. Translators: {} will be replaced with a link to a webpage.
+#: src/recording.rs:195
+msgid "Check out {} for help."
+msgstr "Kontsultatu {} laguntza lortzeko."
+
+#: src/recording.rs:235
+msgid "No microphone source found"
+msgstr "Mikrofonoaren iturria ez da aurkitu"
+
+#: src/recording.rs:242
+msgid "No desktop speaker source found"
+msgstr "Ez da mahaigaineko bozgorailu-iturririk aurkitu"
+
+#: src/recording.rs:249
+msgid "A GStreamer plugin may not be installed."
+msgstr "Baliteke GStreamer plugin bat instalatuta ez egotea."
+
+#: src/recording.rs:273 src/recording.rs:495
+msgid "Make sure that the saving location exists and is accessible."
+msgstr "Ziurtatu gordelekua existitzen dela eta irisgarria dela."
+
+#: src/recording.rs:491
+msgid "An error occurred while recording"
+msgstr "Errorea gertatu da grabatzean"
+
+#. Translators: {} will be replaced with a path to the folder.
+#: src/recording.rs:503
+msgid "Failed to open “{}” for writing"
+msgstr "Errorea idazteko \"{}\" irekitzean"
+
+#: src/recording.rs:505
+msgid "Failed to open file for writing"
+msgstr "Ezin izan da artxiboa ireki idazteko"
+
+#: src/settings.rs:42
+msgid "Select Recordings Folder"
+msgstr "Aukeratu grabazioen karpeta"
+
+#: src/settings.rs:52
+msgid "_Cancel"
+msgstr "_Ezeztatu"
+
+#: src/settings.rs:53
+msgid "_Select"
+msgstr "_Aukeratu"
+
+#: src/settings.rs:67
+msgid "No folder selected"
+msgstr "Ez da karpetarik hautatu"
+
+#: src/settings.rs:68
+msgid "Please choose a folder and try again."
+msgstr "Mesedez, aukeratu karpeta bat eta saiatu berriro."
+
+#. Translators: {} will be replaced with a path to the folder.
+#: src/settings.rs:77
+msgid "Cannot access “{}”"
+msgstr "Ezin da “{}”-ra sartu"
+
+#: src/settings.rs:78
+msgid "Please choose an accessible location and try again."
+msgstr "Mesedez, aukeratu leku irisgarri bat eta saiatu berriro."
+
+#: src/settings.rs:189 src/window.rs:214
+msgid "Ok"
+msgstr "Ados"
+
+#: src/window.rs:70
+msgid "Failed to toggle pause"
+msgstr "Akatsa etenaldia kommutatzean"
+
+#: src/window.rs:177
+msgid "Copy to clipboard"
+msgstr "Kopiatu paper-zorroan"
+
+#: src/window.rs:183
+msgid "Copied to clipboard"
+msgstr "Paper-zorroan kopiatuta"
+
+#: src/window.rs:189
+msgid "Show detailed error"
+msgstr "Errore zehatza erakutsi"
+
+#: src/window.rs:211
+msgid "Help"
+msgstr "Laguntza"
+
+#: src/window.rs:285
+msgid "Open Preferences?"
+msgstr "Ezarpenak ireki?"
+
+#: src/window.rs:286
 msgid ""
-"Make sure to check for the runtime dependencies and <a href=\"https://github."
-"com/SeaDve/Kooha#-it-doesnt-work\">It Doesn't Work page</a>."
+"The previously selected format may have been unavailable. Open preferences "
+"and select a format to continue recording."
 msgstr ""
-"Egiaztatu exekuzio-denbora eta <a href=\"https://github.com/SeaDve/Kooha#-it-"
-"doesnt-work\"> orrialdea ez dabil </a>."
+"Baliteke aurretik hautatutako formatua eskuragarri ez egotea. Ireki "
+"ezarpenak eta aukeratu formatu bat grabatzen jarraitzeko."
 
-#: src/error.rs:48
-msgid ""
-"A GStreamer plugin may not be installed. If it is installed but still does "
-"not work properly, please report to <a href=\"https://github.com/SeaDve/"
-"Kooha/issues\">Kooha's issue page</a>."
-msgstr ""
-"Baliteke GStreamer-en plugin bat instalatuta ez egotea. Instalatuta badago "
-"baina behar bezala funtzionatzen ez badu, jakinarazi, mesedez, <a href="
-"\"https://github.com/SeaDve/Kooha/issues\">Kooha intzidentzia-orrian</a>."
+#: src/window.rs:291
+msgid "Later"
+msgstr "Geroago"
 
-#: src/error.rs:49
-msgid ""
-"Make sure that the saving location exists or is accessible. If it actually "
-"exists or is accessible, something went wrong and please report to <a href="
-"\"https://github.com/SeaDve/Kooha/issues\">Kooha's issue page</a>."
-msgstr ""
-"Ziurtatu gordelekua badagoela edo irisgarria dela. Eskuragarri badago edo "
-"zerbait gaizki joan bada, mesedez, jakinarazi hemen: <a href=\"https://github"
-".com/SeaDve/Kooha/issues\">Kooharen gorabeheren orrialdea</a>."
+#: src/window.rs:292
+msgid "Open"
+msgstr "Ireki"
 
-#: src/widgets/main_window.rs:159
+#: src/window.rs:350
 msgid "Paused"
 msgstr "Pausatua"
 
-#~ msgid "_Cancel"
-#~ msgstr "_Ezeztatu"
+#: src/window.rs:382
+msgid "Normal"
+msgstr "Normala"
 
-#~ msgid "_Select"
-#~ msgstr "_Aukeratu"
+#: src/window.rs:383
+msgid "Selection"
+msgstr "Selekzio-eremua"
 
-#~ msgid "Cannot access “{}”"
-#~ msgstr "Ezin da “{}”-ra sartu"
+#~ msgid "Enable Desktop Sounds"
+#~ msgstr "Mahaigaineko soinuak aktibatu"
 
-#~ msgid "Please choose an accessible location and try again."
-#~ msgstr "Mesedez, aukeratu leku irisgarri bat eta saiatu berriro."
+#~ msgid "Disable Desktop Sounds"
+#~ msgstr "Mahaigaineko soinuak desaktibatu"
+
+#~ msgid "🎥 Capture your screen without any hassle."
+#~ msgstr "🎥 Kapturatu pantaila arazorik gabe."
+
+#~ msgid "🎙️ Record your microphone, computer sounds, or both at the same time."
+#~ msgstr "🎙️ Grabatu zure mikrofonoa, ordenagailuko soinuak edo biak batera."
+
+#~ msgid "📼 Support for WebM, MP4, GIF, and MKV formats."
+#~ msgstr "📼 WebM, MP4, GIF eta MKV formatuetarako euskarria."
+
+#~ msgid "🗔 Multiple sources selection."
+#~ msgstr "🗔 Hainbat iturrien hautaketa."
+
+#~ msgid "🚀 Optional hardware accelerated encoding"
+#~ msgstr "🚀 Hardware bidezko kodetze azeleratua, aukerakoa"
+
+#~ msgid "🖥️ Select a monitor or window to record."
+#~ msgstr "🖥️ Grabatzeko monitore edo leiho bat hautatu."
+
+#~ msgid "🖼️ Create a selection to capture certain area from your screen."
+#~ msgstr "🖼️ Jarri aukera bat zure pantailako eremu jakin bat hartzeko."
+
+#~ msgid "⏲️ Set delay to prepare before you start recording."
+#~ msgstr "⏲️ Grabatzen hasi aurretik prestatzeko atzerapena ezarri."
+
+#~ msgid "🖱️ Hide or show mouse pointer."
+#~ msgstr "🖱️ Saguaren erakuslea ezkutatu edo erakutsi."
+
+#~ msgid "💾 Choose a saving location for your recording."
+#~ msgstr "💾 Aukeratu grabazioa gordetzeko kokaleku bat."
+
+#~ msgid "⌨️ Utilize helpful keyboard shortcuts."
+#~ msgstr "⌨️ Teklatu-lasterbideak erabili."
+
+#~ msgid "Toggle Computer Sounds"
+#~ msgstr "Ordenagailuko soinuak txandakatu"
+
+#~ msgid "_Delay"
+#~ msgstr "_Atzerapena"
+
+#~ msgid "3 seconds"
+#~ msgstr "3 segundo"
+
+#~ msgid "5 seconds"
+#~ msgstr "5 segundo"
+
+#~ msgid "10 seconds"
+#~ msgstr "10 segundo"
+
+#~ msgid "_Video Format"
+#~ msgstr "_Bideo-formatua"
+
+#~ msgid "MKV"
+#~ msgstr "MKV"
+
+#~ msgid "_Save to…"
+#~ msgstr "_Gorde hemen…"
+
+#~ msgid ""
+#~ "A GStreamer plugin may not be installed. If it is installed but still "
+#~ "does not work properly, please report to <a href=\"https://github.com/"
+#~ "SeaDve/Kooha/issues\">Kooha's issue page</a>."
+#~ msgstr ""
+#~ "Baliteke GStreamer-en plugin bat instalatuta ez egotea. Instalatuta "
+#~ "badago baina behar bezala funtzionatzen ez badu, jakinarazi, mesedez, <a "
+#~ "href=\"https://github.com/SeaDve/Kooha/issues\">Kooha intzidentzia-"
+#~ "orrian</a>."
+
+#~ msgid "Record Computer Sounds"
+#~ msgstr "Ordenagailu-soinuak grabatu"
+
+#~ msgid "Record From Microphone"
+#~ msgstr "Mikrofonotik grabatu"
+
+#~ msgid "Dave Patrick"
+#~ msgstr "Dave Patrick"
+
+#~ msgid "Cancel Delay"
+#~ msgstr "Atzerapena bertan behera utzi"
+
+#~ msgid "Copyright 2021 Dave Patrick"
+#~ msgstr "Copyright © 2021 Dave Patrick"
+
+#~ msgid "Screencast Recorded!"
+#~ msgstr "Pantaila grabatua atzematea!"
+
+#~ msgid "The recording has been saved in “{}”"
+#~ msgstr "Grabazioa “{}” -n gorde da"
+
+#~ msgid "Open File"
+#~ msgstr "Ireki artxiboa"
+
+#~ msgid "Screencast Portal Request Error"
+#~ msgstr "Errorea screencast atariko eskaeran"
+
+#~ msgid "Pipeline Build Error"
+#~ msgstr "Errorea pipelina eraikitzean"
+
+#~ msgid "Recording Error"
+#~ msgstr "Grabazio-errorea"
+
+#~ msgid ""
+#~ "Make sure to check for the runtime dependencies and <a href=\"https://"
+#~ "github.com/SeaDve/Kooha#-it-doesnt-work\">It Doesn't Work page</a>."
+#~ msgstr ""
+#~ "Egiaztatu exekuzio-denbora eta <a href=\"https://github.com/SeaDve/Kooha#-"
+#~ "it-doesnt-work\"> orrialdea ez dabil </a>."
+
+#~ msgid ""
+#~ "Make sure that the saving location exists or is accessible. If it "
+#~ "actually exists or is accessible, something went wrong and please report "
+#~ "to <a href=\"https://github.com/SeaDve/Kooha/issues\">Kooha's issue page</"
+#~ "a>."
+#~ msgstr ""
+#~ "Ziurtatu gordelekua badagoela edo irisgarria dela. Eskuragarri badago edo "
+#~ "zerbait gaizki joan bada, mesedez, jakinarazi hemen: <a href=\"https://"
+#~ "github.com/SeaDve/Kooha/issues\">Kooharen gorabeheren orrialdea</a>."
 
 #~ msgid ""
 #~ "Make sure that the saving location exists. If it actually exists, "
@@ -446,9 +728,6 @@ msgstr "Pausatua"
 
 #~ msgid "Failed to select sources."
 #~ msgstr "Akatsak iturriak hautatzean."
-
-#~ msgid "Cancel"
-#~ msgstr "Ezeztatu"
 
 #~ msgid "Select"
 #~ msgstr "Hautatu"

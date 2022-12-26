@@ -8,13 +8,14 @@
 # Dave Patrick <davecruz48@gmail.com>, 2021.
 # Pointify Starrcat <pointify@e.email>, 2021.
 # Chardinson De la cruz Ventura <chardinsondelacruzventura@gmail.com>, 2021.
+# Sergio Varela <sergitroll9@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: kooha\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-10 07:44+0800\n"
-"PO-Revision-Date: 2022-01-13 11:53+0000\n"
-"Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
+"POT-Creation-Date: 2022-12-25 09:25+0800\n"
+"PO-Revision-Date: 2022-10-26 20:07+0000\n"
+"Last-Translator: Sergio Varela <sergitroll9@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/kooha/pot-file/"
 "es/>\n"
 "Language: es\n"
@@ -22,15 +23,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 #: data/io.github.seadve.Kooha.desktop.in.in:3
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:7 src/application.rs:172
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:6 src/about.rs:20
+#: src/main.rs:63
 msgid "Kooha"
 msgstr "Kooha"
 
 #: data/io.github.seadve.Kooha.desktop.in.in:5
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:8 src/application.rs:173
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:7
 msgid "Elegantly record your screen"
 msgstr "Grabe su pantalla elegantemente"
 
@@ -39,13 +41,13 @@ msgstr "Grabe su pantalla elegantemente"
 msgid "Screencast;Recorder;Screen;Video;"
 msgstr "Capturar pantalla;Grabador;Pantalla;Vídeo;"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:10
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:9
 msgid ""
 "Capture your screen in a intuitive and straightforward way without "
 "distractions."
 msgstr "Capture su pantalla de forma intuitiva y directa, sin distracciones."
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:11
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:10
 msgid ""
 "Kooha is a simple screen recorder with a minimalist interface. You can just "
 "click the record button without having to configure a bunch of settings."
@@ -58,285 +60,567 @@ msgid "The main features of Kooha include the following:"
 msgstr "Las características principales de Kooha incluyen lo siguiente:"
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:14
-msgid "🎥 Capture your screen without any hassle."
-msgstr "🎥 Grabar su pantalla sin ninguna molestia."
+msgid "🎙️ Record microphone, desktop audio, or both at the same time"
+msgstr "🎙️ Graba el micrófono, el audio del escritorio, o ambos a la vez"
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:15
-msgid "🎙️ Record your microphone, computer sounds, or both at the same time."
-msgstr ""
-"🎙️ Grabar su micrófono, los sonidos del sistema, o ambos al mismo tiempo."
+msgid "📼 Support for WebM, MP4, GIF, and Matroska formats"
+msgstr "📼 Compatibilidad con los formatos WebM, MP4, GIF y Matroska"
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:16
-msgid "📼 Support for WebM, MP4, GIF, and MKV formats."
-msgstr "📼 Soporte para formatos WebM, MP4, GIF, y MKV."
+msgid "🖥️ Select a monitor, a window, or a portion of the screen to record"
+msgstr ""
+"🖥️ Selecciona un monitor, una ventana o una parte de la pantalla para grabar"
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:17
-msgid "🗔 Multiple sources selection."
-msgstr "🗔 Selección de múltiples fuentes."
+msgid "🗔 Multiple sources selection"
+msgstr "🗔 Selección de múltiples fuentes"
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:18
-msgid "🚀 Optional hardware accelerated encoding"
-msgstr "🚀 Codificación acelerada por hardware opcional"
+msgid ""
+"🛠️ Configurable saving location, pointer visibility, frame rate, and delay"
+msgstr ""
+"🛠️ Ubicación de guardado, visibilidad del puntero, tasa de fotogramas y "
+"retardo configurables"
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:19
-msgid "🖥️ Select a monitor or window to record."
-msgstr "🖥️ Seleccionar un monitor o ventana para grabar."
+msgid "🚀 Experimental hardware accelerated encoding"
+msgstr "🚀 Codificación experimental acelerada por hardware"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:20
-msgid "🖼️ Create a selection to capture certain area from your screen."
-msgstr ""
-"🖼️ Crear una selección para capturar una área específica de su pantalla."
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:26 src/about.rs:21
+msgid "Dave Patrick Caberto"
+msgstr "Dave Patrick Caberto"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:21
-msgid "⏲️ Set delay to prepare before you start recording."
-msgstr "⏲️ Seleccionar un retardo antes de empezar a grabar."
+#: data/resources/ui/area-selector.ui:15
+msgid "Select Area"
+msgstr "Seleccionar área"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:22
-msgid "🖱️ Hide or show mouse pointer."
-msgstr "🖱️ Ocultar o mostrar el puntero."
+#: data/resources/ui/area-selector.ui:20 data/resources/ui/window.ui:238
+#: data/resources/ui/window.ui:280
+msgid "Cancel"
+msgstr "Cancelar"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:23
-msgid "💾 Choose a saving location for your recording."
-msgstr "💾 Seleccionar una ubicación para su grabación."
+#: data/resources/ui/area-selector.ui:26
+msgid "Done"
+msgstr "Hecho"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:24
-msgid "⌨️ Utilize helpful keyboard shortcuts."
-msgstr "⌨️ Usar los útiles atajos del teclado."
+#: data/resources/ui/area-selector.ui:35
+msgid "Reset Selection"
+msgstr "Reiniciar selección"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:31
-msgid "Dave Patrick"
-msgstr "Dave Patrick"
-
-#: data/resources/ui/shortcuts.ui:10
+#: data/resources/ui/preferences-window.ui:11 data/resources/ui/shortcuts.ui:10
 msgid "General"
 msgstr "General"
+
+#: data/resources/ui/preferences-window.ui:14
+msgid "Delay (Seconds)"
+msgstr "Retardo (segundos)"
+
+#: data/resources/ui/preferences-window.ui:32
+msgid "Recordings Folder"
+msgstr "Carpeta de grabaciones"
+
+#: data/resources/ui/preferences-window.ui:51
+msgid "Video"
+msgstr "Vídeo"
+
+#: data/resources/ui/preferences-window.ui:54
+msgid "Format"
+msgstr "Formato"
+
+#: data/resources/ui/preferences-window.ui:59
+msgid "Frame Rate"
+msgstr "Tasa de fotogramas"
+
+#: data/resources/ui/preferences-window.ui:65
+msgid "This frame rate may cause performance issues."
+msgstr "Esta tasa de fotogramas puede causar problemas de rendimiento."
 
 #: data/resources/ui/shortcuts.ui:14
 msgid "Open Menu"
 msgstr "Abrir menú"
 
 #: data/resources/ui/shortcuts.ui:20
+msgid "Show Preferences"
+msgstr "Mostrar preferencias"
+
+#: data/resources/ui/shortcuts.ui:26
 msgid "Show Shortcuts"
 msgstr "Mostrar atajos"
 
-#: data/resources/ui/shortcuts.ui:26
+#: data/resources/ui/shortcuts.ui:32
 msgid "Quit"
 msgstr "Salir"
 
-#: data/resources/ui/shortcuts.ui:33 src/widgets/main_window.rs:154
+#: data/resources/ui/shortcuts.ui:39 src/window.rs:342
 msgid "Recording"
 msgstr "Grabando"
 
-#: data/resources/ui/shortcuts.ui:37
+#: data/resources/ui/shortcuts.ui:43
 msgid "Toggle Record"
 msgstr "Conmutar grabación"
 
-#: data/resources/ui/shortcuts.ui:44
+#: data/resources/ui/shortcuts.ui:50
 msgid "Toggle Pause"
 msgstr "Conmutar pausa"
 
-#: data/resources/ui/shortcuts.ui:50 data/resources/ui/window.ui:237
-msgid "Cancel Delay"
-msgstr "Cancelar retardo"
+#: data/resources/ui/shortcuts.ui:56
+msgid "Cancel Record"
+msgstr "Cancelar grabación"
 
-#: data/resources/ui/shortcuts.ui:57
+#: data/resources/ui/shortcuts.ui:63
 msgid "Settings"
 msgstr "Ajustes"
 
-#: data/resources/ui/shortcuts.ui:61
-msgid "Toggle Computer Sounds"
-msgstr "Conmutar sonidos del ordenador"
-
 #: data/resources/ui/shortcuts.ui:67
+msgid "Toggle Desktop Audio"
+msgstr "Cambiar el audio del escritorio"
+
+#: data/resources/ui/shortcuts.ui:73
 msgid "Toggle Microphone"
 msgstr "Conmutar micrófono"
 
-#: data/resources/ui/shortcuts.ui:73
+#: data/resources/ui/shortcuts.ui:79
 msgid "Toggle Pointer"
 msgstr "Conmutar puntero"
 
-#: data/resources/ui/window.ui:31
+#: data/resources/ui/window.ui:29
 msgid "Main Menu"
 msgstr "Menú principal"
 
-#: data/resources/ui/window.ui:47
-msgid "Normal"
-msgstr "Normal"
-
-#: data/resources/ui/window.ui:57
-msgid "Selection"
-msgstr "Selección"
-
-#: data/resources/ui/window.ui:86
+#: data/resources/ui/window.ui:58
 msgid "Capture a Monitor or Window"
 msgstr "Capturar un monitor o una ventana"
 
-#: data/resources/ui/window.ui:94
+#: data/resources/ui/window.ui:71
 msgid "Capture a Selection of Screen"
 msgstr "Capturar una selección de la pantalla"
 
-#: data/resources/ui/window.ui:107
-msgid "Record Computer Sounds"
-msgstr "Grabar sonidos del ordenador"
+#: data/resources/ui/window.ui:91
+msgid "Enable Desktop Audio"
+msgstr "Activar el audio de escritorio"
 
-#: data/resources/ui/window.ui:114
-msgid "Record From Microphone"
-msgstr "Grabar desde el micrófono"
+#: data/resources/ui/window.ui:92
+msgid "Disable Desktop Audio"
+msgstr "Desactivar el audio del escritorio"
 
-#: data/resources/ui/window.ui:121
+#: data/resources/ui/window.ui:100
+msgid "Enable Microphone"
+msgstr "Activar micrófono"
+
+#: data/resources/ui/window.ui:101
+msgid "Disable Microphone"
+msgstr "Desactivar micrófono"
+
+#: data/resources/ui/window.ui:109
 msgid "Show Pointer"
 msgstr "Mostrar puntero"
 
-#: data/resources/ui/window.ui:128
+#: data/resources/ui/window.ui:110
+msgid "Hide Pointer"
+msgstr "Ocultar puntero"
+
+#: data/resources/ui/window.ui:120
+msgid "Start Recording"
+msgstr "Iniciar grabación"
+
+#: data/resources/ui/window.ui:121
 msgid "Record"
 msgstr "Grabar"
 
-#: data/resources/ui/window.ui:182
+#: data/resources/ui/window.ui:134
+msgid "Forget Previously Selected Video Sources"
+msgstr "Olvidar las fuentes de vídeo previamente seleccionadas"
+
+#: data/resources/ui/window.ui:185
+msgid "Stop Recording"
+msgstr "Detener grabación"
+
+#: data/resources/ui/window.ui:186
 msgid "Stop"
 msgstr "Detener"
+
+#: data/resources/ui/window.ui:196
+msgid "Pause Recording"
+msgstr "Pausar grabación"
 
 #: data/resources/ui/window.ui:219
 msgid "Recording in…"
 msgstr "Grabando en…"
 
-#: data/resources/ui/window.ui:258
+#: data/resources/ui/window.ui:237 data/resources/ui/window.ui:279
+msgid "Cancel Recording"
+msgstr "Cancelar grabación"
+
+#: data/resources/ui/window.ui:262
 msgid "Flushing…"
 msgstr "Purgando…"
 
-#: data/resources/ui/window.ui:283
-msgid "_Delay"
-msgstr "_Retardo"
-
-#: data/resources/ui/window.ui:285
-msgid "None"
-msgstr "Ninguno"
-
-#: data/resources/ui/window.ui:290
-msgid "5 seconds"
-msgstr "5 segundos"
-
-#: data/resources/ui/window.ui:295
-msgid "10 seconds"
-msgstr "10 segundos"
+#: data/resources/ui/window.ui:297
+msgid "_Preferences"
+msgstr "_Preferencias"
 
 #: data/resources/ui/window.ui:301
-msgid "_Video Format"
-msgstr "_Formato de vídeo"
-
-#: data/resources/ui/window.ui:303
-msgid "WebM"
-msgstr "WebM"
-
-#: data/resources/ui/window.ui:308
-msgid "MKV"
-msgstr "MKV"
-
-#: data/resources/ui/window.ui:313
-msgid "MP4"
-msgstr "MP4"
-
-#: data/resources/ui/window.ui:318
-msgid "GIF"
-msgstr "GIF"
-
-#: data/resources/ui/window.ui:324
-msgid "_Save to…"
-msgstr "_Guardar en…"
-
-#: data/resources/ui/window.ui:330
 msgid "_Keyboard Shortcuts"
 msgstr "_Atajos del teclado"
 
-#: data/resources/ui/window.ui:334
+#: data/resources/ui/window.ui:305
 msgid "_About Kooha"
 msgstr "_Acerca de Kooha"
 
-#: src/application.rs:138
-msgid "Select Recordings Folder"
-msgstr "Elegir carpeta de grabaciones"
+#: src/about.rs:23
+msgid "© 2022 Dave Patrick Caberto"
+msgstr "© 2022 Dave Patrick Caberto"
 
 #. Translators: Replace "translator-credits" with your names. Put a comma between.
-#: src/application.rs:183
+#: src/about.rs:31
 msgid "translator-credits"
 msgstr "Óscar Fernández Díaz <oscfdezdz@tuta.io>"
 
-#: src/application.rs:184
-msgid "Copyright 2021 Dave Patrick"
-msgstr "Copyright 2021 Dave Patrick"
+#: src/about.rs:41
+msgid "Donate (Liberapay)"
+msgstr "Donar (Liberapay)"
 
-#: src/application.rs:187
+#: src/about.rs:45
+msgid "Donate (PayPal)"
+msgstr "Donar (PayPal)"
+
+#: src/about.rs:49
 msgid "GitHub"
 msgstr "GitHub"
 
-#: src/application.rs:208
-msgid "Screencast Recorded!"
-msgstr "¡Captura de pantalla grabada!"
+#: src/about.rs:51
+msgid "Translate"
+msgstr "Traducir"
 
-#: src/application.rs:210
-msgid "The recording has been saved in “{}”"
-msgstr "La grabación se ha guardado en “{}”"
+#. Translators: This is a message that the user will see when the recording is finished.
+#: src/application.rs:107
+msgid "Screencast recorded"
+msgstr "Grabación de pantalla finalizada"
 
-#: src/application.rs:218
-msgid "Open File"
-msgstr "Abrir archivo"
+#: src/application.rs:108
+msgid "Click here to view the video."
+msgstr "Haga clic aquí para ver el vídeo."
 
-#: src/error.rs:17
-msgid "Screencast Portal Request Error"
-msgstr "Error de solicitud del portal de transmisión de pantalla"
+#: src/application.rs:114
+msgid "Show in Files"
+msgstr "Mostrar en Archivos"
 
-#: src/error.rs:18
-msgid "Pipeline Build Error"
-msgstr "Error de construcción de la tubería"
+#: src/area_selector/mod.rs:318
+msgid "approx."
+msgstr "aprox."
 
-#: src/error.rs:19
-msgid "Recording Error"
-msgstr "Error de grabación"
+#: src/audio_device.rs:53 src/audio_device.rs:175
+msgid "Make sure that you have PulseAudio installed in your system."
+msgstr "Asegúrese de que tiene instalado PulseAudio en su sistema."
 
-#: src/error.rs:47
+#: src/audio_device.rs:54
+msgid "Failed to start device monitor"
+msgstr "No se ha podido iniciar el seguimiento del dispositivo"
+
+#: src/audio_device.rs:176
+msgid "Failed to connect to PulseAudio daemon"
+msgstr "Fallo en la conexión con el demonio PulseAudio"
+
+#: src/preferences_window.rs:225
+msgid "This format is experimental and unsupported."
+msgstr "Este formato es experimental y no está soportado."
+
+#: src/preferences_window.rs:254
+msgid "None"
+msgstr "Ninguno"
+
+#: src/profile.rs:115
+msgid "GIF"
+msgstr "GIF"
+
+#: src/profile.rs:266
+msgid "WebM"
+msgstr "WebM"
+
+#: src/profile.rs:290
+msgid "MP4"
+msgstr "MP4"
+
+#: src/profile.rs:309
+msgid "Matroska"
+msgstr "Matroska"
+
+#: src/profile.rs:342
+msgid "WebM VP9"
+msgstr "WebM VP9"
+
+#: src/profile.rs:366
+msgid "WebM AV1"
+msgstr "WebM AV1"
+
+#: src/profile.rs:387
+msgid "WebM VAAPI VP8"
+msgstr "WebM VAAPI VP8"
+
+#: src/profile.rs:402
+msgid "WebM VAAPI VP9"
+msgstr "WebM VAAPI VP9"
+
+#: src/profile.rs:417
+msgid "WebM VAAPI H264"
+msgstr "WebM VAAPI H264"
+
+#: src/recording.rs:37
+msgid "No active profile"
+msgstr "Ningún perfil activo"
+
+#. Translators: {} will be replaced with a link to a webpage.
+#. github.com/SeaDve/Kooha#-it-doesnt-work">It Doesn't Work page</a>"#),
+#: src/recording.rs:196 src/recording.rs:250 src/recording.rs:274
+msgid "Failed to start recording"
+msgstr "No se ha podido iniciar la grabación"
+
+#. Translators: {} will be replaced with a link to a webpage.
+#: src/recording.rs:195
+msgid "Check out {} for help."
+msgstr "Consulte {} para obtener ayuda."
+
+#: src/recording.rs:235
+msgid "No microphone source found"
+msgstr "No se ha encontrado la fuente del micrófono"
+
+#: src/recording.rs:242
+msgid "No desktop speaker source found"
+msgstr "No se ha encontrado ninguna fuente de altavoces de sobremesa"
+
+#: src/recording.rs:249
+msgid "A GStreamer plugin may not be installed."
+msgstr "Es posible que no esté instalado un plugin de GStreamer."
+
+#: src/recording.rs:273 src/recording.rs:495
+msgid "Make sure that the saving location exists and is accessible."
+msgstr "Asegúrese de que la ubicación de guardado existe y es accesible."
+
+#: src/recording.rs:491
+msgid "An error occurred while recording"
+msgstr "Se ha producido un error al grabar"
+
+#. Translators: {} will be replaced with a path to the folder.
+#: src/recording.rs:503
+msgid "Failed to open “{}” for writing"
+msgstr "Fallo al abrir \"{}\" para escribir"
+
+#: src/recording.rs:505
+msgid "Failed to open file for writing"
+msgstr "No se ha podido abrir el archivo para escribir"
+
+#: src/settings.rs:42
+msgid "Select Recordings Folder"
+msgstr "Elegir carpeta de grabaciones"
+
+#: src/settings.rs:52
+msgid "_Cancel"
+msgstr "_Cancelar"
+
+#: src/settings.rs:53
+msgid "_Select"
+msgstr "_Seleccionar"
+
+#: src/settings.rs:67
+msgid "No folder selected"
+msgstr "No se ha seleccionado ninguna carpeta"
+
+#: src/settings.rs:68
+msgid "Please choose a folder and try again."
+msgstr "Por favor, elija una carpeta e inténtelo de nuevo."
+
+#. Translators: {} will be replaced with a path to the folder.
+#: src/settings.rs:77
+msgid "Cannot access “{}”"
+msgstr "No se puede acceder a “{}”"
+
+#: src/settings.rs:78
+msgid "Please choose an accessible location and try again."
+msgstr "Por favor, elija un lugar accesible e inténtelo de nuevo."
+
+#: src/settings.rs:189 src/window.rs:214
+msgid "Ok"
+msgstr "Vale"
+
+#: src/window.rs:70
+msgid "Failed to toggle pause"
+msgstr "Fallo al conmutar la pausa"
+
+#: src/window.rs:177
+msgid "Copy to clipboard"
+msgstr "Copiar al portapapeles"
+
+#: src/window.rs:183
+msgid "Copied to clipboard"
+msgstr "Copiado al portapapeles"
+
+#: src/window.rs:189
+msgid "Show detailed error"
+msgstr "Mostrar error detallado"
+
+#: src/window.rs:211
+msgid "Help"
+msgstr "Ayuda"
+
+#: src/window.rs:285
+msgid "Open Preferences?"
+msgstr "¿Abrir preferencias?"
+
+#: src/window.rs:286
 msgid ""
-"Make sure to check for the runtime dependencies and <a href=\"https://github."
-"com/SeaDve/Kooha#-it-doesnt-work\">It Doesn't Work page</a>."
+"The previously selected format may have been unavailable. Open preferences "
+"and select a format to continue recording."
 msgstr ""
-"Asegúrese de comprobar las dependencias de tiempo de ejecución y <a href="
-"\"https://github.com/SeaDve/Kooha#-it-doesnt-work\">la página No funciona</"
-"a>."
+"Es posible que el formato seleccionado anteriormente no esté disponible. "
+"Abra las preferencias y seleccione un formato para seguir grabando."
 
-#: src/error.rs:48
-msgid ""
-"A GStreamer plugin may not be installed. If it is installed but still does "
-"not work properly, please report to <a href=\"https://github.com/SeaDve/"
-"Kooha/issues\">Kooha's issue page</a>."
-msgstr ""
-"Es posible que un plugin de GStreamer no esté instalado. Si está instalado "
-"pero sigue sin funcionar correctamente, por favor informe a la <a href="
-"\"https://github.com/SeaDve/Kooha/issues\">página de incidencias de Kooha</"
-"a>."
+#: src/window.rs:291
+msgid "Later"
+msgstr "Más tarde"
 
-#: src/error.rs:49
-msgid ""
-"Make sure that the saving location exists or is accessible. If it actually "
-"exists or is accessible, something went wrong and please report to <a href="
-"\"https://github.com/SeaDve/Kooha/issues\">Kooha's issue page</a>."
-msgstr ""
-"Asegúrese de que la ubicación de guardado existe o es accesible. Si existe o "
-"es accesible, algo ha ido mal y, por favor, informe en la <a href=\"https"
-"://github.com/SeaDve/Kooha/issues\">página de incidencias de Kooha</a>."
+#: src/window.rs:292
+msgid "Open"
+msgstr "Abrir"
 
-#: src/widgets/main_window.rs:159
+#: src/window.rs:350
 msgid "Paused"
 msgstr "En pausa"
 
-#~ msgid "_Cancel"
-#~ msgstr "_Cancelar"
+#: src/window.rs:382
+msgid "Normal"
+msgstr "Normal"
 
-#~ msgid "_Select"
-#~ msgstr "_Seleccionar"
+#: src/window.rs:383
+msgid "Selection"
+msgstr "Selección"
 
-#~ msgid "Cannot access “{}”"
-#~ msgstr "No se puede acceder a “{}”"
+#~ msgid "Enable Desktop Sounds"
+#~ msgstr "Activar sonidos del escritorio"
 
-#~ msgid "Please choose an accessible location and try again."
-#~ msgstr "Por favor, elija un lugar accesible e inténtelo de nuevo."
+#~ msgid "Disable Desktop Sounds"
+#~ msgstr "Desactivar sonidos del escritorio"
+
+#~ msgid "🎥 Capture your screen without any hassle."
+#~ msgstr "🎥 Grabar su pantalla sin ninguna molestia."
+
+#~ msgid "🎙️ Record your microphone, computer sounds, or both at the same time."
+#~ msgstr ""
+#~ "🎙️ Grabar su micrófono, los sonidos del sistema, o ambos al mismo tiempo."
+
+#~ msgid "📼 Support for WebM, MP4, GIF, and MKV formats."
+#~ msgstr "📼 Soporte para formatos WebM, MP4, GIF, y MKV."
+
+#~ msgid "🗔 Multiple sources selection."
+#~ msgstr "🗔 Selección de múltiples fuentes."
+
+#~ msgid "🚀 Optional hardware accelerated encoding"
+#~ msgstr "🚀 Codificación acelerada por hardware opcional"
+
+#~ msgid "🖥️ Select a monitor or window to record."
+#~ msgstr "🖥️ Seleccionar un monitor o ventana para grabar."
+
+#~ msgid "🖼️ Create a selection to capture certain area from your screen."
+#~ msgstr ""
+#~ "🖼️ Crear una selección para capturar una área específica de su pantalla."
+
+#~ msgid "⏲️ Set delay to prepare before you start recording."
+#~ msgstr "⏲️ Seleccionar un retardo antes de empezar a grabar."
+
+#~ msgid "🖱️ Hide or show mouse pointer."
+#~ msgstr "🖱️ Ocultar o mostrar el puntero."
+
+#~ msgid "💾 Choose a saving location for your recording."
+#~ msgstr "💾 Seleccionar una ubicación para su grabación."
+
+#~ msgid "⌨️ Utilize helpful keyboard shortcuts."
+#~ msgstr "⌨️ Usar los útiles atajos del teclado."
+
+#~ msgid "Toggle Computer Sounds"
+#~ msgstr "Conmutar sonidos del ordenador"
+
+#~ msgid "_Delay"
+#~ msgstr "_Retardo"
+
+#~ msgid "3 seconds"
+#~ msgstr "3 segundos"
+
+#~ msgid "5 seconds"
+#~ msgstr "5 segundos"
+
+#~ msgid "10 seconds"
+#~ msgstr "10 segundos"
+
+#~ msgid "_Video Format"
+#~ msgstr "_Formato de vídeo"
+
+#~ msgid "MKV"
+#~ msgstr "MKV"
+
+#~ msgid "_Save to…"
+#~ msgstr "_Guardar en…"
+
+#~ msgid ""
+#~ "A GStreamer plugin may not be installed. If it is installed but still "
+#~ "does not work properly, please report to <a href=\"https://github.com/"
+#~ "SeaDve/Kooha/issues\">Kooha's issue page</a>."
+#~ msgstr ""
+#~ "Es posible que un plugin de GStreamer no esté instalado. Si está "
+#~ "instalado pero sigue sin funcionar correctamente, por favor informe a la "
+#~ "<a href=\"https://github.com/SeaDve/Kooha/issues\">página de incidencias "
+#~ "de Kooha</a>."
+
+#~ msgid "Record Computer Sounds"
+#~ msgstr "Grabar sonidos del ordenador"
+
+#~ msgid "Record From Microphone"
+#~ msgstr "Grabar desde el micrófono"
+
+#~ msgid "Dave Patrick"
+#~ msgstr "Dave Patrick"
+
+#~ msgid "Cancel Delay"
+#~ msgstr "Cancelar retardo"
+
+#~ msgid "Copyright 2021 Dave Patrick"
+#~ msgstr "Copyright 2021 Dave Patrick"
+
+#~ msgid "Screencast Recorded!"
+#~ msgstr "¡Captura de pantalla grabada!"
+
+#~ msgid "The recording has been saved in “{}”"
+#~ msgstr "La grabación se ha guardado en “{}”"
+
+#~ msgid "Open File"
+#~ msgstr "Abrir archivo"
+
+#~ msgid "Screencast Portal Request Error"
+#~ msgstr "Error de solicitud del portal de transmisión de pantalla"
+
+#~ msgid "Pipeline Build Error"
+#~ msgstr "Error de construcción de la tubería"
+
+#~ msgid "Recording Error"
+#~ msgstr "Error de grabación"
+
+#~ msgid ""
+#~ "Make sure to check for the runtime dependencies and <a href=\"https://"
+#~ "github.com/SeaDve/Kooha#-it-doesnt-work\">It Doesn't Work page</a>."
+#~ msgstr ""
+#~ "Asegúrese de comprobar las dependencias de tiempo de ejecución y <a href="
+#~ "\"https://github.com/SeaDve/Kooha#-it-doesnt-work\">la página No "
+#~ "funciona</a>."
+
+#~ msgid ""
+#~ "Make sure that the saving location exists or is accessible. If it "
+#~ "actually exists or is accessible, something went wrong and please report "
+#~ "to <a href=\"https://github.com/SeaDve/Kooha/issues\">Kooha's issue page</"
+#~ "a>."
+#~ msgstr ""
+#~ "Asegúrese de que la ubicación de guardado existe o es accesible. Si "
+#~ "existe o es accesible, algo ha ido mal y, por favor, informe en la <a "
+#~ "href=\"https://github.com/SeaDve/Kooha/issues\">página de incidencias de "
+#~ "Kooha</a>."
 
 #~ msgid ""
 #~ "Make sure that the saving location exists. If it actually exists, "
@@ -459,9 +743,6 @@ msgstr "En pausa"
 #~ msgid "Failed to select sources."
 #~ msgstr "Error al seleccionar las fuentes."
 
-#~ msgid "Cancel"
-#~ msgstr "Cancelar"
-
 #~ msgid "Select"
 #~ msgstr "Seleccionar"
 
@@ -495,9 +776,6 @@ msgstr "En pausa"
 
 #~ msgid "The recording has been saved in"
 #~ msgstr "La grabación se ha guardado en"
-
-#~ msgid "Open"
-#~ msgstr "Abrir"
 
 #~ msgid "Record computer sounds"
 #~ msgstr "Grabar audio del dispositivo"

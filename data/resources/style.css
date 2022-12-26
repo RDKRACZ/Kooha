@@ -1,26 +1,34 @@
-.large-icons image {
-  -gtk-icon-size: 32px;
+row.error-view {
+  padding: 0px;
 }
 
-.time-label {
+label.large-time {
   font-size: 450%;
   font-weight: 300;
   font-feature-settings: "tnum";
 }
 
-.recording {
+label.recording {
   color: @destructive_bg_color;
 }
 
-.paused {
+label.paused {
   animation-name: blinking;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(1.0, 0, 0, 1.0);
   animation-duration: 1s;
 }
 
+button.copy-done {
+  color: @accent_bg_color;
+}
+
+window.area-selector .view-port {
+  padding: 12px;
+}
+
 @keyframes blinking {
   0% {
-    color: @theme_fg_color;
+    color: @window_fg_color;
   }
 }

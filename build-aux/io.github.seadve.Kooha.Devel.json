@@ -1,28 +1,35 @@
 {
-    "app-id": "io.github.seadve.Kooha.Devel",
+    "id": "io.github.seadve.Kooha.Devel",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "41",
+    "runtime-version": "43",
     "sdk": "org.gnome.Sdk",
-    "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
+    "sdk-extensions": [
+        "org.freedesktop.Sdk.Extension.rust-stable",
+        "org.freedesktop.Sdk.Extension.llvm14"
+    ],
     "command": "kooha",
-    "finish-args" : [
+    "finish-args": [
         "--device=dri",
         "--filesystem=xdg-videos",
         "--socket=fallback-x11",
         "--socket=pulseaudio",
         "--socket=wayland",
-        "--talk-name=org.gnome.Shell",
+        "--talk-name=org.freedesktop.FileManager1",
         "--env=RUST_BACKTRACE=1",
         "--env=RUST_LOG=kooha=debug",
         "--env=G_MESSAGES_DEBUG=none",
-        "--env=GST_DEBUG=3",
-        "--env=PIPEWIRE_DEBUG=3"
+        "--env=KOOHA_EXPERIMENTAL=1",
+        "--env=GST_DEBUG=3"
     ],
-    "build-options" : {
-        "append-path" : "/usr/lib/sdk/rust-stable/bin",
-        "build-args" : [
+    "build-options": {
+        "append-path": "/usr/lib/sdk/llvm14/bin:/usr/lib/sdk/rust-stable/bin",
+        "build-args": [
             "--share=network"
-        ]
+        ],
+        "env": {
+            "CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_LINKER": "clang",
+            "CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_RUSTFLAGS": "-C link-arg=-fuse-ld=/usr/lib/sdk/rust-stable/bin/mold"
+        }
     },
     "modules": [
         {
@@ -36,7 +43,7 @@
                 {
                     "type": "git",
                     "url": "https://code.videolan.org/videolan/x264.git",
-                    "branch": "stable"
+                    "commit": "baee400fa9ced6f5481a728138fed6e867b0ff7f"
                 }
             ]
         },
@@ -46,56 +53,15 @@
             "builddir": true,
             "config-opts": [
                 "-Ddoc=disabled",
-                "-Dorc=disabled",
                 "-Dnls=disabled",
                 "-Dtests=disabled",
-                "-Dgobject-cast-checks=disabled",
-                "-Dglib-asserts=disabled",
-                "-Dglib-checks=disabled"
+                "-Dgpl=enabled"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.18.4.tar.xz",
-                    "sha256": "218df0ce0d31e8ca9cdeb01a3b0c573172cc9c21bb3d41811c7820145623d13c"
-                }
-            ]
-        },
-        {
-            "name": "gstreamer-vaapi",
-            "buildsystem": "meson",
-            "builddir": true,
-            "config-opts": [
-                "-Ddoc=disabled",
-                "-Dtests=disabled",
-                "-Dexamples=disabled",
-                "-Dwith_encoders=yes"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://gstreamer.freedesktop.org/src/gstreamer-vaapi/gstreamer-vaapi-1.18.4.tar.xz",
-                    "sha256": "92db98af86f3150d429c9ab17e88d2364f9c07a140c8f445ed739e8f10252aea"
-                }
-            ]
-        },
-        {
-            "name" : "libadwaita",
-            "buildsystem" : "meson",
-            "config-opts": [
-                "-Dtests=false",
-                "-Dexamples=false",
-                "-Dvapi=false"
-            ],
-            "cleanup": [
-                "/include",
-                "/lib/pkgconfig"
-            ],
-            "sources" : [
-                {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    "tag" : "1.0.0.alpha.4"
+                    "url": "https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.20.3.tar.xz",
+                    "sha256": "8caa20789a09c304b49cf563d33cca9421b1875b84fcc187e4a385fa01d6aefd"
                 }
             ]
         },
@@ -103,7 +69,9 @@
             "name": "kooha",
             "buildsystem": "meson",
             "run-tests": true,
-            "config-opts": ["-Dprofile=development"],
+            "config-opts": [
+                "-Dprofile=development"
+            ],
             "sources": [
                 {
                     "type": "dir",

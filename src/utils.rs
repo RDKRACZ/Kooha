@@ -1,68 +1,61 @@
-use ashpd::zbus;
-use gtk::glib;
+use anyhow::{anyhow, Result};
+use gtk::{
+    gio,
+    glib::{self, prelude::*},
+};
 
-use std::cmp;
+use std::{env, path::Path};
+
+use crate::{settings::Settings, Application};
 
 const MAX_THREAD_COUNT: u32 = 64;
 
-pub fn round_to_even(number: f64) -> i32 {
-    number as i32 / 2 * 2
+/// Spawns a future in the default [`glib::MainContext`]
+pub fn spawn<F: std::future::Future<Output = ()> + 'static>(fut: F) {
+    let ctx = glib::MainContext::default();
+    ctx.spawn_local(fut);
 }
 
-pub fn ideal_thread_count() -> u32 {
-    let num_processors = glib::num_processors();
-    cmp::min(num_processors, MAX_THREAD_COUNT)
-}
-
-pub fn set_raise_active_window_request(is_raised: bool) -> anyhow::Result<()> {
-    shell_window_eval("make_above", is_raised)?;
-    shell_window_eval("stick", is_raised)?;
-    Ok(())
-}
-
-fn shell_window_eval(method: &str, is_enabled: bool) -> anyhow::Result<()> {
-    let reverse_keyword = if is_enabled { "" } else { "un" };
-    let command = format!(
-        "global.display.focus_window.{}{}()",
-        reverse_keyword, method
+/// Get the global instance of `Application`.
+///
+/// # Panics
+/// Panics if the application is not running or if this is
+/// called on a non-main thread.
+pub fn app_instance() -> Application {
+    debug_assert!(
+        gtk::is_initialized_main_thread(),
+        "Application can only be accessed in the main thread"
     );
 
-    let connection = zbus::Connection::session()?;
-    let reply = connection.call_method(
-        Some("org.gnome.Shell"),
-        "/org/gnome/Shell",
-        Some("org.gnome.Shell"),
-        "Eval",
-        &command,
-    )?;
-    let (is_success, message) = reply.body::<(bool, String)>()?;
-
-    if !is_success {
-        anyhow::bail!(message);
-    };
-
-    Ok(())
+    gio::Application::default().unwrap().downcast().unwrap()
 }
 
-#[cfg(test)]
-mod test {
-    use super::*;
+/// Get the global instance of `Settings`.
+///
+/// # Panics
+/// Panics if the application is not running or if this is
+/// called on a non-main thread.
+pub fn app_settings() -> Settings {
+    app_instance().settings().clone()
+}
 
-    #[test]
-    fn odd_round_to_even() {
-        assert_eq!(round_to_even(3.0), 2);
-        assert_eq!(round_to_even(99.0), 98);
-    }
+/// Whether the application is running in a flatpak sandbox.
+pub fn is_flatpak() -> bool {
+    Path::new("/.flatpak-info").exists()
+}
 
-    #[test]
-    fn even_round_to_even() {
-        assert_eq!(round_to_even(50.0), 50);
-        assert_eq!(round_to_even(4.0), 4);
-    }
+/// Ideal thread count to use for `GStreamer` processing.
+pub fn ideal_thread_count() -> u32 {
+    glib::num_processors().min(MAX_THREAD_COUNT)
+}
 
-    #[test]
-    fn float_round_to_even() {
-        assert_eq!(round_to_even(5.3), 4);
-        assert_eq!(round_to_even(2.9), 2);
-    }
+pub fn is_experimental_mode() -> bool {
+    env::var("KOOHA_EXPERIMENTAL").map_or(false, |value| value == "1")
+}
+
+/// Helper function for more helpful error messages when failed to find
+/// an element factory.
+pub fn find_element_factory(factory_name: &str) -> Result<gst::ElementFactory> {
+    gst::ElementFactory::find(factory_name)
+        .ok_or_else(|| anyhow!("Factory `{}` not found", factory_name))
 }

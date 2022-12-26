@@ -6,44 +6,52 @@ on:
 name: CI
 
 jobs:
-  codespell:
-    name: Codespell
-    runs-on: ubuntu-20.04
+  checks:
+    name: Checks
+    runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v2
-      - uses: codespell-project/actions-codespell@master
-        with:
-          check_filenames: true
-          ignore_words_list: "crate,ser"
-          skip: "*.svg,*.po"
+      - uses: actions/checkout@v3
+      # FIXME uncomment when we don't --skip ui_files anymore
+      # - name: Download dependencies
+      #   run: sudo apt -y install libgtk-4-dev
+      - name: Run checks.py
+        run: curl https://raw.githubusercontent.com/SeaDve/scripts/main/checks.py | python - --verbose --skip rustfmt typos ui_files
 
   rustfmt:
     name: Rustfmt
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: actions-rs/toolchain@v1
         with:
           profile: minimal
           toolchain: stable
           override: true
           components: rustfmt
-      - name: "Create blank versions of configured file"
+      - name: Create blank versions of configured file
         run: echo -e "" >> src/config.rs
-      - name: "Run rustfmt"
+      - name: Run cargo fmt
         run: cargo fmt --all -- --check
+
+  typos:
+    name: Typos
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Check for typos
+        uses: crate-ci/typos@master
 
   flatpak:
     name: Flatpak
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     container:
-      image: bilelmoussaoui/flatpak-github-actions:gnome-nightly
+      image: bilelmoussaoui/flatpak-github-actions:gnome-43
       options: --privileged
     steps:
-    - uses: actions/checkout@v2
-    - uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v4
-      with:
-        bundle: kooha.flatpak
-        manifest-path: build-aux/io.github.seadve.Kooha.Devel.json
-        run-tests: true
-        cache-key: flatpak-builder-${{ github.sha }}
+      - uses: actions/checkout@v3
+      - uses: flatpak/flatpak-github-actions/flatpak-builder@v5
+        with:
+          bundle: kooha.flatpak
+          manifest-path: build-aux/io.github.seadve.Kooha.Devel.json
+          run-tests: true
+          cache-key: flatpak-builder-${{ github.sha }}

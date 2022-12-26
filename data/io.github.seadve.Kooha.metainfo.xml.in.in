@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2021 Dave Patrick <davecruz48@gmail.com> -->
 <component type="desktop-application">
   <id>@app-id@</id>
   <metadata_license>CC0-1.0</metadata_license>
@@ -8,27 +7,23 @@
   <summary>Elegantly record your screen</summary>
   <description>
     <p>Capture your screen in a intuitive and straightforward way without distractions.</p>
-    <p>Kooha is a simple screen recorder with a minimalist interface. You can just click the record button without having to configure a bunch of settings.</p>
+    <p>Kooha is a simple screen recorder with a minimalist interface. You can just click the record
+      button without having to configure a bunch of settings.</p>
     <p>The main features of Kooha include the following:</p>
     <ul>
-      <li>🎥 Capture your screen without any hassle.</li>
-      <li>🎙️ Record your microphone, computer sounds, or both at the same time.</li>
-      <li>📼 Support for WebM, MP4, GIF, and MKV formats.</li>
-      <li>🗔 Multiple sources selection.</li>
-      <li>🚀 Optional hardware accelerated encoding</li>
-      <li>🖥️ Select a monitor or window to record.</li>
-      <li>🖼️ Create a selection to capture certain area from your screen.</li>
-      <li>⏲️ Set delay to prepare before you start recording.</li>
-      <li>🖱️ Hide or show mouse pointer.</li>
-      <li>💾 Choose a saving location for your recording.</li>
-      <li>⌨️ Utilize helpful keyboard shortcuts.</li>
+      <li>🎙️ Record microphone, desktop audio, or both at the same time</li>
+      <li>📼 Support for WebM, MP4, GIF, and Matroska formats</li>
+      <li>🖥️ Select a monitor, a window, or a portion of the screen to record</li>
+      <li>🗔 Multiple sources selection</li>
+      <li>🛠️ Configurable saving location, pointer visibility, frame rate, and delay</li>
+      <li>🚀 Experimental hardware accelerated encoding</li>
     </ul>
   </description>
   <url type="homepage">https://github.com/SeaDve/Kooha</url>
   <url type="bugtracker">https://github.com/SeaDve/Kooha/issues</url>
   <url type="translate">https://hosted.weblate.org/projects/kooha/pot-file/</url>
   <url type="donation">https://liberapay.com/SeaDve/</url>
-  <developer_name>Dave Patrick</developer_name>
+  <developer_name>Dave Patrick Caberto</developer_name>
   <update_contact>davecruz48@gmail.com</update_contact>
   <content_rating type="oars-1.1"/>
   <translation type="gettext">@gettext-package@</translation>
@@ -45,6 +40,83 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="2.2.3" date="2022-12-25">
+      <description>
+        <p>This release contains minor fixes:</p>
+        <ul>
+          <li>Fixed indefinite flushing time on certain distros</li>
+          <li>Slightly improved performance on certain configurations</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.2.2" date="2022-10-02">
+      <description>
+        <p>This release contains minor fixes:</p>
+        <ul>
+          <li>Fixed error dialog showing when show uri is simply cancelled</li>
+          <li>Fixed more audio issues</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.2.1" date="2022-10-01">
+      <description>
+        <p>This release contains minor fixes:</p>
+        <ul>
+          <li>Only show None profile when it is active</li>
+          <li>Guard window selection behind `KOOHA_EXPERIMENTAL` env var</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.2.0" date="2022-09-29">
+      <description>
+        <p>This release contains new features and fixes:</p>
+        <ul>
+          <li>New area selection UI</li>
+          <li>Added option to change the frame rate through the UI</li>
+          <li>Improved delay settings flexibility</li>
+          <li>Added preferences window for easier configuration</li>
+          <li>Added `KOOHA_EXPERIMENTAL` env var to show experimental (unsupported) encoders like
+            VAAPI-VP8 and VAAPI-H264</li>
+          <li>Added the following experimental (unsupported) encoders: VP9, AV1, and VAAPI-VP9</li>
+          <li>Unavailable formats/encoders are now hidden from the UI</li>
+          <li>Fixed broken audio on long recordings</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.1.1" date="2022-08-21">
+      <description>
+        <p>This release contains fixes:</p>
+        <ul>
+          <li>Improved tooltip text on settings toggle buttons</li>
+          <li>Fallback to manual mode when failed to get default device name through GStreamer
+            device monitor</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.1.0" date="2022-08-19">
+      <description>
+        <p>This release contains new features and fixes:</p>
+        <ul>
+          <li>Remember previously selected video sources</li>
+          <li>Added ability to cancel while flushing the recording</li>
+          <li>Use different icons for settings toggle button to discern state more clearly</li>
+          <li>Added 3 seconds delay option</li>
+          <li>Fixed x264 encoder failing to initialize on uneven resolutions</li>
+          <li>Fixed minutes stuck on 00 if time is equal or greater than an hour</li>
+          <li>Recordings are now stored by default in `~/Videos/Kooha` (This won't affect existing
+            settings)</li>
+          <li>"Show in Files" button in notifications now highlights the file in the file manager</li>
+          <li>Improved support information in the new about window</li>
+          <li>Improved error handling</li>
+          <li>Improved codebase and stability</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.0.1" date="2021-10-20">
       <description>
         <p>This is a minor release:</p>

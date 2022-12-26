@@ -8,13 +8,17 @@
 # Liu Tao <lyuutau@outlook.com>, 2021.
 # joe <ourmicroid@outlook.com>, 2022.
 # lumingzh <lumingzh@qq.com>, 2022.
+# Hugel <qihu@nfschina.com>, 2022.
+# Leedsgarden <lkw1411026824@outlook.com>, 2022.
+# Deleted User <hamburger1024@users.noreply.hosted.weblate.org>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: kooha\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-10 07:44+0800\n"
-"PO-Revision-Date: 2022-07-31 03:16+0000\n"
-"Last-Translator: TheInterestingSoul <wangpy01@outlook.com>\n"
+"POT-Creation-Date: 2022-12-25 09:25+0800\n"
+"PO-Revision-Date: 2022-12-26 04:49+0000\n"
+"Last-Translator: Deleted User <hamburger1024@users.noreply.hosted.weblate."
+"org>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "kooha/pot-file/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -22,15 +26,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #: data/io.github.seadve.Kooha.desktop.in.in:3
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:7 src/application.rs:172
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:6 src/about.rs:20
+#: src/main.rs:63
 msgid "Kooha"
 msgstr "Kooha"
 
 #: data/io.github.seadve.Kooha.desktop.in.in:5
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:8 src/application.rs:173
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:7
 msgid "Elegantly record your screen"
 msgstr "优雅地录制屏幕"
 
@@ -39,13 +44,13 @@ msgstr "优雅地录制屏幕"
 msgid "Screencast;Recorder;Screen;Video;"
 msgstr "Screencast;Recorder;Screen;Video;录屏;录制;视频;屏幕;屏幕录制;"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:10
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:9
 msgid ""
 "Capture your screen in a intuitive and straightforward way without "
 "distractions."
 msgstr "以直观、直接的方式捕捉屏幕，无需分心。"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:11
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:10
 msgid ""
 "Kooha is a simple screen recorder with a minimalist interface. You can just "
 "click the record button without having to configure a bunch of settings."
@@ -57,203 +62,217 @@ msgid "The main features of Kooha include the following:"
 msgstr "Kooha 的主要特性有："
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:14
-msgid "🎥 Capture your screen without any hassle."
-msgstr "🎥 轻松录屏，省心省时。"
+msgid "🎙️ Record microphone, desktop audio, or both at the same time"
+msgstr "🎙️ 可以同时录制麦克风，电脑音频"
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:15
-msgid "🎙️ Record your microphone, computer sounds, or both at the same time."
-msgstr "🎙️ 录制麦克风或计算机声音，抑或两者同时录制。"
+msgid "📼 Support for WebM, MP4, GIF, and Matroska formats"
+msgstr "📼 支持MP4、GIF、WebM、MKV、MKA和MKS格式"
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:16
-msgid "📼 Support for WebM, MP4, GIF, and MKV formats."
-msgstr "📼 支持 WebM、MP4、GIF 和 MKV 格式。"
+msgid "🖥️ Select a monitor, a window, or a portion of the screen to record"
+msgstr "🖥️ 你可以录制桌面，窗口或者屏幕的指定部分"
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:17
-msgid "🗔 Multiple sources selection."
-msgstr "🗔 多个画面来源选择。"
+msgid "🗔 Multiple sources selection"
+msgstr "🗔 你可以同时启用多个录制源"
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:18
-msgid "🚀 Optional hardware accelerated encoding"
-msgstr "🚀 可选硬件加速编码"
+msgid ""
+"🛠️ Configurable saving location, pointer visibility, frame rate, and delay"
+msgstr "🛠️ 你可以配置光标是否可见，帧率的大小和延迟的高低，将配置文件保存在本地"
 
 #: data/io.github.seadve.Kooha.metainfo.xml.in.in:19
-msgid "🖥️ Select a monitor or window to record."
-msgstr "🖥️ 选择显示器或窗口以录制。"
+msgid "🚀 Experimental hardware accelerated encoding"
+msgstr "🚀 尝试使用硬件加速编码"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:20
-msgid "🖼️ Create a selection to capture certain area from your screen."
-msgstr "🖼️ 在屏幕上选择特定区域来捕获画面。"
+#: data/io.github.seadve.Kooha.metainfo.xml.in.in:26 src/about.rs:21
+msgid "Dave Patrick Caberto"
+msgstr "Dave Patrick Caberto"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:21
-msgid "⏲️ Set delay to prepare before you start recording."
-msgstr "⏲️ 在开始录制之前设置延迟来准备。"
+#: data/resources/ui/area-selector.ui:15
+msgid "Select Area"
+msgstr "选择区域"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:22
-msgid "🖱️ Hide or show mouse pointer."
-msgstr "🖱️ 显示/隐藏鼠标指针。"
+#: data/resources/ui/area-selector.ui:20 data/resources/ui/window.ui:238
+#: data/resources/ui/window.ui:280
+msgid "Cancel"
+msgstr "取消"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:23
-msgid "💾 Choose a saving location for your recording."
-msgstr "💾 为您的录像选择一个保存位置。"
+#: data/resources/ui/area-selector.ui:26
+msgid "Done"
+msgstr "完成"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:24
-msgid "⌨️ Utilize helpful keyboard shortcuts."
-msgstr "⌨️ 键盘快捷键让你事半功倍。"
+#: data/resources/ui/area-selector.ui:35
+msgid "Reset Selection"
+msgstr "重设选区"
 
-#: data/io.github.seadve.Kooha.metainfo.xml.in.in:31
-msgid "Dave Patrick"
-msgstr "Dave Patrick"
-
-#: data/resources/ui/shortcuts.ui:10
+#: data/resources/ui/preferences-window.ui:11 data/resources/ui/shortcuts.ui:10
 msgid "General"
 msgstr "通用"
+
+#: data/resources/ui/preferences-window.ui:14
+msgid "Delay (Seconds)"
+msgstr "延迟（s）"
+
+#: data/resources/ui/preferences-window.ui:32
+msgid "Recordings Folder"
+msgstr "录制文件夹"
+
+#: data/resources/ui/preferences-window.ui:51
+msgid "Video"
+msgstr "视频"
+
+#: data/resources/ui/preferences-window.ui:54
+msgid "Format"
+msgstr "格式"
+
+#: data/resources/ui/preferences-window.ui:59
+msgid "Frame Rate"
+msgstr "帧率"
+
+#: data/resources/ui/preferences-window.ui:65
+msgid "This frame rate may cause performance issues."
+msgstr "此帧率可能会导致性能问题。"
 
 #: data/resources/ui/shortcuts.ui:14
 msgid "Open Menu"
 msgstr "打开菜单"
 
 #: data/resources/ui/shortcuts.ui:20
+msgid "Show Preferences"
+msgstr "显示设置"
+
+#: data/resources/ui/shortcuts.ui:26
 msgid "Show Shortcuts"
 msgstr "显示快捷键"
 
-#: data/resources/ui/shortcuts.ui:26
+#: data/resources/ui/shortcuts.ui:32
 msgid "Quit"
 msgstr "退出"
 
-#: data/resources/ui/shortcuts.ui:33 src/widgets/main_window.rs:154
+#: data/resources/ui/shortcuts.ui:39 src/window.rs:342
 msgid "Recording"
 msgstr "录制中"
 
-#: data/resources/ui/shortcuts.ui:37
+#: data/resources/ui/shortcuts.ui:43
 msgid "Toggle Record"
-msgstr "切换录制状态"
+msgstr "录制/停止"
 
-#: data/resources/ui/shortcuts.ui:44
+#: data/resources/ui/shortcuts.ui:50
 msgid "Toggle Pause"
-msgstr "切换暂停状态"
+msgstr "继续/暂停"
 
-#: data/resources/ui/shortcuts.ui:50 data/resources/ui/window.ui:237
-msgid "Cancel Delay"
-msgstr "取消延迟"
+#: data/resources/ui/shortcuts.ui:56
+msgid "Cancel Record"
+msgstr "取消录制"
 
-#: data/resources/ui/shortcuts.ui:57
+#: data/resources/ui/shortcuts.ui:63
 msgid "Settings"
 msgstr "设置"
 
-#: data/resources/ui/shortcuts.ui:61
-msgid "Toggle Computer Sounds"
-msgstr "切换电脑声音录制状态"
-
 #: data/resources/ui/shortcuts.ui:67
-msgid "Toggle Microphone"
-msgstr "切换麦克风录制状态"
+msgid "Toggle Desktop Audio"
+msgstr "打开/关闭电脑音频"
 
 #: data/resources/ui/shortcuts.ui:73
-msgid "Toggle Pointer"
-msgstr "切换鼠标指针显示状态"
+msgid "Toggle Microphone"
+msgstr "打开/关闭麦克风"
 
-#: data/resources/ui/window.ui:31
+#: data/resources/ui/shortcuts.ui:79
+msgid "Toggle Pointer"
+msgstr "显示/隐藏鼠标指针"
+
+#: data/resources/ui/window.ui:29
 msgid "Main Menu"
 msgstr "主菜单"
 
-#: data/resources/ui/window.ui:47
-msgid "Normal"
-msgstr "一般"
-
-#: data/resources/ui/window.ui:57
-msgid "Selection"
-msgstr "选区录制"
-
-#: data/resources/ui/window.ui:86
+#: data/resources/ui/window.ui:58
 msgid "Capture a Monitor or Window"
 msgstr "捕捉一个显示器或窗口"
 
-#: data/resources/ui/window.ui:94
+#: data/resources/ui/window.ui:71
 msgid "Capture a Selection of Screen"
 msgstr "捕捉一个屏幕选区"
 
-#: data/resources/ui/window.ui:107
-msgid "Record Computer Sounds"
-msgstr "录制本机声音"
+#: data/resources/ui/window.ui:91
+msgid "Enable Desktop Audio"
+msgstr "打开桌面音频"
 
-#: data/resources/ui/window.ui:114
-msgid "Record From Microphone"
-msgstr "录制麦克风声音"
+#: data/resources/ui/window.ui:92
+msgid "Disable Desktop Audio"
+msgstr "关闭桌面音频"
 
-#: data/resources/ui/window.ui:121
+#: data/resources/ui/window.ui:100
+msgid "Enable Microphone"
+msgstr "打开麦克风"
+
+#: data/resources/ui/window.ui:101
+msgid "Disable Microphone"
+msgstr "关闭麦克风"
+
+#: data/resources/ui/window.ui:109
 msgid "Show Pointer"
 msgstr "显示鼠标指针"
 
-#: data/resources/ui/window.ui:128
+#: data/resources/ui/window.ui:110
+msgid "Hide Pointer"
+msgstr "隐藏鼠标指针"
+
+#: data/resources/ui/window.ui:120
+msgid "Start Recording"
+msgstr "开始录制"
+
+#: data/resources/ui/window.ui:121
 msgid "Record"
 msgstr "录制"
 
-#: data/resources/ui/window.ui:182
+#: data/resources/ui/window.ui:134
+msgid "Forget Previously Selected Video Sources"
+msgstr "重设原先的视频源"
+
+#: data/resources/ui/window.ui:185
+msgid "Stop Recording"
+msgstr "停止记录"
+
+#: data/resources/ui/window.ui:186
 msgid "Stop"
 msgstr "停止"
+
+#: data/resources/ui/window.ui:196
+msgid "Pause Recording"
+msgstr "停止录制"
 
 #: data/resources/ui/window.ui:219
 msgid "Recording in…"
 msgstr "即将录制……"
 
-#: data/resources/ui/window.ui:258
+#: data/resources/ui/window.ui:237 data/resources/ui/window.ui:279
+msgid "Cancel Recording"
+msgstr "取消录制"
+
+#: data/resources/ui/window.ui:262
 msgid "Flushing…"
 msgstr "冲制中…"
 
-#: data/resources/ui/window.ui:283
-msgid "_Delay"
-msgstr "延迟(_D)"
-
-#: data/resources/ui/window.ui:285
-msgid "None"
-msgstr "无"
-
-#: data/resources/ui/window.ui:290
-msgid "5 seconds"
-msgstr "5 秒"
-
-#: data/resources/ui/window.ui:295
-msgid "10 seconds"
-msgstr "10 秒"
+#: data/resources/ui/window.ui:297
+msgid "_Preferences"
+msgstr "设置"
 
 #: data/resources/ui/window.ui:301
-msgid "_Video Format"
-msgstr "视频格式(_V)"
-
-#: data/resources/ui/window.ui:303
-msgid "WebM"
-msgstr "WebM"
-
-#: data/resources/ui/window.ui:308
-msgid "MKV"
-msgstr "MKV"
-
-#: data/resources/ui/window.ui:313
-msgid "MP4"
-msgstr "MP4"
-
-#: data/resources/ui/window.ui:318
-msgid "GIF"
-msgstr "GIF"
-
-#: data/resources/ui/window.ui:324
-msgid "_Save to…"
-msgstr "保存到(_S)…"
-
-#: data/resources/ui/window.ui:330
 msgid "_Keyboard Shortcuts"
 msgstr "快捷键(_K)"
 
-#: data/resources/ui/window.ui:334
+#: data/resources/ui/window.ui:305
 msgid "_About Kooha"
 msgstr "关于 Kooha (_A)"
 
-#: src/application.rs:138
-msgid "Select Recordings Folder"
-msgstr "选择录制保存文件夹"
+#: src/about.rs:23
+msgid "© 2022 Dave Patrick Caberto"
+msgstr "© 2022 Dave Patrick Caberto"
 
 #. Translators: Replace "translator-credits" with your names. Put a comma between.
-#: src/application.rs:183
+#: src/about.rs:31
 msgid "translator-credits"
 msgstr ""
 "有趣的灵魂 (@TheInterestingSoul)\n"
@@ -262,79 +281,335 @@ msgstr ""
 "WhiredPlanck &lt;wplanck@aosc.io&gt;\n"
 "lumingzh &lt;lumingzh@qq.com&gt;"
 
-#: src/application.rs:184
-msgid "Copyright 2021 Dave Patrick"
-msgstr "版权所有: Dave Patrick"
+#: src/about.rs:41
+msgid "Donate (Liberapay)"
+msgstr "捐赠（Liberapay）"
 
-#: src/application.rs:187
+#: src/about.rs:45
+msgid "Donate (PayPal)"
+msgstr "捐赠（PayPal）"
+
+#: src/about.rs:49
 msgid "GitHub"
 msgstr "GitHub"
 
-#: src/application.rs:208
-msgid "Screencast Recorded!"
-msgstr "屏幕已录制！"
+#: src/about.rs:51
+msgid "Translate"
+msgstr "翻译"
 
-#: src/application.rs:210
-msgid "The recording has been saved in “{}”"
-msgstr "录制文件已保存到“{}”"
+#. Translators: This is a message that the user will see when the recording is finished.
+#: src/application.rs:107
+msgid "Screencast recorded"
+msgstr "截屏记录"
 
-#: src/application.rs:218
-msgid "Open File"
-msgstr "打开文件"
+#: src/application.rs:108
+msgid "Click here to view the video."
+msgstr "点击此处查看视频。"
 
-#: src/error.rs:17
-msgid "Screencast Portal Request Error"
-msgstr "请求录制入口时出错"
+#: src/application.rs:114
+msgid "Show in Files"
+msgstr "在文件中显示"
 
-#: src/error.rs:18
-msgid "Pipeline Build Error"
-msgstr "管道构建时出错"
-
-#: src/error.rs:19
-msgid "Recording Error"
-msgstr "录制时出错"
-
-#: src/error.rs:47
-msgid ""
-"Make sure to check for the runtime dependencies and <a href=\"https://github."
-"com/SeaDve/Kooha#-it-doesnt-work\">It Doesn't Work page</a>."
+#: src/area_selector/mod.rs:318
+msgid "approx."
 msgstr ""
-"请确保检查运行时依赖和<a href=\"https://github.com/SeaDve/Kooha#-it-doesnt-"
-"work\">“为何不工作”说明页</a>。"
 
-#: src/error.rs:48
+#: src/audio_device.rs:53 src/audio_device.rs:175
+msgid "Make sure that you have PulseAudio installed in your system."
+msgstr "确保你已在系统安装PulseAudio。"
+
+#: src/audio_device.rs:54
+msgid "Failed to start device monitor"
+msgstr "启动设备监视器失败"
+
+#: src/audio_device.rs:176
+msgid "Failed to connect to PulseAudio daemon"
+msgstr "连接到PulseAudio守护进程失败"
+
+#: src/preferences_window.rs:225
+msgid "This format is experimental and unsupported."
+msgstr "此格式是实验性的，不受支持。"
+
+#: src/preferences_window.rs:254
+msgid "None"
+msgstr "无"
+
+#: src/profile.rs:115
+msgid "GIF"
+msgstr "GIF"
+
+#: src/profile.rs:266
+msgid "WebM"
+msgstr "WebM"
+
+#: src/profile.rs:290
+msgid "MP4"
+msgstr "MP4"
+
+#: src/profile.rs:309
+msgid "Matroska"
+msgstr "Matroska"
+
+#: src/profile.rs:342
+msgid "WebM VP9"
+msgstr "WebM VP9"
+
+#: src/profile.rs:366
+msgid "WebM AV1"
+msgstr "WebM AV1"
+
+#: src/profile.rs:387
+msgid "WebM VAAPI VP8"
+msgstr "WebM VAAPI VP8"
+
+#: src/profile.rs:402
+msgid "WebM VAAPI VP9"
+msgstr "WebM VAAPI VP9"
+
+#: src/profile.rs:417
+msgid "WebM VAAPI H264"
+msgstr "WebM VAAPI H264"
+
+#: src/recording.rs:37
+msgid "No active profile"
+msgstr "配置无效"
+
+#. Translators: {} will be replaced with a link to a webpage.
+#. github.com/SeaDve/Kooha#-it-doesnt-work">It Doesn't Work page</a>"#),
+#: src/recording.rs:196 src/recording.rs:250 src/recording.rs:274
+msgid "Failed to start recording"
+msgstr "开始录制失败"
+
+#. Translators: {} will be replaced with a link to a webpage.
+#: src/recording.rs:195
+msgid "Check out {} for help."
+msgstr "查看{}以获取帮助。"
+
+#: src/recording.rs:235
+msgid "No microphone source found"
+msgstr "没有找到麦克风源"
+
+#: src/recording.rs:242
+msgid "No desktop speaker source found"
+msgstr "没有找到桌面音频源"
+
+#: src/recording.rs:249
+msgid "A GStreamer plugin may not be installed."
+msgstr "GStreamer plugin可能没有安装。"
+
+#: src/recording.rs:273 src/recording.rs:495
+msgid "Make sure that the saving location exists and is accessible."
+msgstr "确保保存路径存在并可以访问。"
+
+#: src/recording.rs:491
+msgid "An error occurred while recording"
+msgstr "录制时产生错误"
+
+#. Translators: {} will be replaced with a path to the folder.
+#: src/recording.rs:503
+msgid "Failed to open “{}” for writing"
+msgstr "打开“{}”写入失败"
+
+#: src/recording.rs:505
+msgid "Failed to open file for writing"
+msgstr "打开文件写入失败"
+
+#: src/settings.rs:42
+msgid "Select Recordings Folder"
+msgstr "选择录制保存文件夹"
+
+#: src/settings.rs:52
+msgid "_Cancel"
+msgstr "取消(_C)"
+
+#: src/settings.rs:53
+msgid "_Select"
+msgstr "选择(_S)"
+
+#: src/settings.rs:67
+msgid "No folder selected"
+msgstr "没有选中文件夹"
+
+#: src/settings.rs:68
+msgid "Please choose a folder and try again."
+msgstr "请选择一个文件夹，然后重试。"
+
+#. Translators: {} will be replaced with a path to the folder.
+#: src/settings.rs:77
+msgid "Cannot access “{}”"
+msgstr "无法访问“{}”"
+
+#: src/settings.rs:78
+msgid "Please choose an accessible location and try again."
+msgstr "请选择一个可以访问的位置并重试。"
+
+#: src/settings.rs:189 src/window.rs:214
+msgid "Ok"
+msgstr "Ok"
+
+#: src/window.rs:70
+msgid "Failed to toggle pause"
+msgstr "切换暂停状态失败"
+
+#: src/window.rs:177
+msgid "Copy to clipboard"
+msgstr "复制到剪贴板"
+
+#: src/window.rs:183
+msgid "Copied to clipboard"
+msgstr "已复制到剪贴板"
+
+#: src/window.rs:189
+msgid "Show detailed error"
+msgstr "显示错误详情"
+
+#: src/window.rs:211
+msgid "Help"
+msgstr "帮助"
+
+#: src/window.rs:285
+msgid "Open Preferences?"
+msgstr "是否要打开设置？"
+
+#: src/window.rs:286
 msgid ""
-"A GStreamer plugin may not be installed. If it is installed but still does "
-"not work properly, please report to <a href=\"https://github.com/SeaDve/"
-"Kooha/issues\">Kooha's issue page</a>."
-msgstr ""
-"可能未安装 GStreamer 插件。如果已安装但仍无法正常工作，请报告<a href=\"https://github.com/SeaDve/"
-"Kooha/issues\">kooha问题页面</a>。"
+"The previously selected format may have been unavailable. Open preferences "
+"and select a format to continue recording."
+msgstr "先前选择的格式可能不可用。打开首选项并选择一种格式以继续录制。"
 
-#: src/error.rs:49
-msgid ""
-"Make sure that the saving location exists or is accessible. If it actually "
-"exists or is accessible, something went wrong and please report to <a href="
-"\"https://github.com/SeaDve/Kooha/issues\">Kooha's issue page</a>."
-msgstr ""
-"‎确保保存位置存在或可访问。如果确实存在且可访问，则出问题，请报告给‎‎<a href=\"https://github.com/SeaDve/"
-"Kooha/issues\">‎‎古嗣的问题页面‎‎</a>‎。"
+#: src/window.rs:291
+msgid "Later"
+msgstr "稍后"
 
-#: src/widgets/main_window.rs:159
+#: src/window.rs:292
+msgid "Open"
+msgstr "打开"
+
+#: src/window.rs:350
 msgid "Paused"
 msgstr "已暂停"
 
-#~ msgid "_Cancel"
-#~ msgstr "取消(_C)"
+#: src/window.rs:382
+msgid "Normal"
+msgstr "一般"
 
-#~ msgid "_Select"
-#~ msgstr "选择(_S)"
+#: src/window.rs:383
+msgid "Selection"
+msgstr "选区录制"
 
-#~ msgid "Cannot access “{}”"
-#~ msgstr "无法访问“{}”"
+#~ msgid "🎥 Capture your screen without any hassle."
+#~ msgstr "🎥 轻松录屏，省心省时。"
 
-#~ msgid "Please choose an accessible location and try again."
-#~ msgstr "请选择一个可以访问的位置并重试。"
+#~ msgid "🎙️ Record your microphone, computer sounds, or both at the same time."
+#~ msgstr "🎙️ 录制麦克风或计算机声音，抑或两者同时录制。"
+
+#~ msgid "📼 Support for WebM, MP4, GIF, and MKV formats."
+#~ msgstr "📼 支持 WebM、MP4、GIF 和 MKV 格式。"
+
+#~ msgid "🗔 Multiple sources selection."
+#~ msgstr "🗔 多个画面来源选择。"
+
+#~ msgid "🚀 Optional hardware accelerated encoding"
+#~ msgstr "🚀 可选硬件加速编码"
+
+#~ msgid "🖥️ Select a monitor or window to record."
+#~ msgstr "🖥️ 选择显示器或窗口以录制。"
+
+#~ msgid "🖼️ Create a selection to capture certain area from your screen."
+#~ msgstr "🖼️ 在屏幕上选择特定区域来捕获画面。"
+
+#~ msgid "⏲️ Set delay to prepare before you start recording."
+#~ msgstr "⏲️ 在开始录制之前设置延迟来准备。"
+
+#~ msgid "🖱️ Hide or show mouse pointer."
+#~ msgstr "🖱️ 显示/隐藏鼠标指针。"
+
+#~ msgid "💾 Choose a saving location for your recording."
+#~ msgstr "💾 为您的录像选择一个保存位置。"
+
+#~ msgid "⌨️ Utilize helpful keyboard shortcuts."
+#~ msgstr "⌨️ 键盘快捷键让你事半功倍。"
+
+#~ msgid "Toggle Computer Sounds"
+#~ msgstr "切换电脑声音录制状态"
+
+#~ msgid "_Delay"
+#~ msgstr "延迟(_D)"
+
+#~ msgid "3 seconds"
+#~ msgstr "3秒"
+
+#~ msgid "5 seconds"
+#~ msgstr "5 秒"
+
+#~ msgid "10 seconds"
+#~ msgstr "10 秒"
+
+#~ msgid "_Video Format"
+#~ msgstr "视频格式(_V)"
+
+#~ msgid "MKV"
+#~ msgstr "MKV"
+
+#~ msgid "_Save to…"
+#~ msgstr "保存到(_S)…"
+
+#~ msgid ""
+#~ "A GStreamer plugin may not be installed. If it is installed but still "
+#~ "does not work properly, please report to <a href=\"https://github.com/"
+#~ "SeaDve/Kooha/issues\">Kooha's issue page</a>."
+#~ msgstr ""
+#~ "可能未安装 GStreamer 插件。如果已安装但仍无法正常工作，请报告<a href="
+#~ "\"https://github.com/SeaDve/Kooha/issues\">kooha问题页面</a>。"
+
+#~ msgid "Record Computer Sounds"
+#~ msgstr "录制本机声音"
+
+#~ msgid "Record From Microphone"
+#~ msgstr "录制麦克风声音"
+
+#~ msgid "Dave Patrick"
+#~ msgstr "Dave Patrick"
+
+#~ msgid "Cancel Delay"
+#~ msgstr "取消延迟"
+
+#~ msgid "Copyright 2021 Dave Patrick"
+#~ msgstr "版权所有: Dave Patrick"
+
+#~ msgid "Screencast Recorded!"
+#~ msgstr "屏幕已录制！"
+
+#~ msgid "The recording has been saved in “{}”"
+#~ msgstr "录制文件已保存到“{}”"
+
+#~ msgid "Open File"
+#~ msgstr "打开文件"
+
+#~ msgid "Screencast Portal Request Error"
+#~ msgstr "请求录制入口时出错"
+
+#~ msgid "Pipeline Build Error"
+#~ msgstr "管道构建时出错"
+
+#~ msgid "Recording Error"
+#~ msgstr "录制时出错"
+
+#~ msgid ""
+#~ "Make sure to check for the runtime dependencies and <a href=\"https://"
+#~ "github.com/SeaDve/Kooha#-it-doesnt-work\">It Doesn't Work page</a>."
+#~ msgstr ""
+#~ "请确保检查运行时依赖和<a href=\"https://github.com/SeaDve/Kooha#-it-"
+#~ "doesnt-work\">“为何不工作”说明页</a>。"
+
+#~ msgid ""
+#~ "Make sure that the saving location exists or is accessible. If it "
+#~ "actually exists or is accessible, something went wrong and please report "
+#~ "to <a href=\"https://github.com/SeaDve/Kooha/issues\">Kooha's issue page</"
+#~ "a>."
+#~ msgstr ""
+#~ "‎确保保存位置存在或可访问。如果确实存在且可访问，则出问题，请报告给‎‎<a href="
+#~ "\"https://github.com/SeaDve/Kooha/issues\">‎‎古嗣的问题页面‎‎</a>‎。"
 
 #~ msgid ""
 #~ "A GStreamer plugin may not be installed. If not, please report to <a href="
@@ -418,9 +693,6 @@ msgstr "已暂停"
 
 #~ msgid "Failed to select sources."
 #~ msgstr "无法选择录制源。"
-
-#~ msgid "Cancel"
-#~ msgstr "取消"
 
 #~ msgid "Select"
 #~ msgstr "选择"
